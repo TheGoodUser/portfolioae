@@ -37,7 +37,7 @@ function load_hmScrn() {
     
     
     window.addEventListener("scroll", ()=> {
-        console.log(0.5-scrollY/1560)
+        // console.log(0.5-scrollY/1560)
         background_script.forEach((e)=>{
             e.style.color = `rgba(197, 114, 7, ${0.2-scrollY/1560})`;
         });    
