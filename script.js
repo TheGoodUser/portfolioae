@@ -4,7 +4,7 @@ let timer = document.getElementById('timer');
 let intervalId = setInterval(() => {
     let hindi_no = ""; 
 
-    seconds += 50; 
+    seconds += 20; 
     if (seconds >= 100) { 
         load_hmScrn();
         autoScroll();
