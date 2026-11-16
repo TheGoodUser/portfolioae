@@ -14,15 +14,15 @@
   <meta name="theme-color" content="#F5EFE4" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
 
-  <!-- Open Graph / Facebook / LinkedIn / WhatsApp Rich Preview -->
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp Rich Preview (Image URL with fallback / absolute CDN reference) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Koffee Space">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://koffee.space/">
   <meta property="og:title" content="Koffee Space — Ship Production Apps & Cloud Without Bloat">
   <meta property="og:description" content="Direct senior engineering by Siddharth Roy. Architecting and shipping Flutter apps, FastAPI microservices, and AWS edge infrastructure in days rather than months.">
-  <meta property="og:image" content="https://koffee.space/og-preview.png">
-  <meta property="og:image:secure_url" content="https://koffee.space/og-preview.png">
+  <meta property="og:image" content="https://placehold.co/1200x630/131209/D4A359?text=THE+KOFFEE+CHRONICLE+%2F%2F+SYSTEMS+STUDIO">
+  <meta property="og:image:secure_url" content="https://placehold.co/1200x630/131209/D4A359?text=THE+KOFFEE+CHRONICLE+%2F%2F+SYSTEMS+STUDIO">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
   <meta name="twitter:creator" content="@TheGoodUser">
   <meta name="twitter:title" content="Koffee Space — Ship Production Apps & Cloud Without Bloat">
   <meta name="twitter:description" content="Direct senior engineering for Flutter mobile, FastAPI backends, and AWS edge infrastructure. 10,400+ MAU shipped with 100% repo ownership.">
-  <meta name="twitter:image" content="https://koffee.space/og-preview.png">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/131209/D4A359?text=THE+KOFFEE+CHRONICLE+%2F%2F+SYSTEMS+STUDIO">
   <meta name="twitter:image:alt" content="The Koffee Chronicle — Systems Architecture & Full-Stack Product Engineering by Siddharth Roy">
 
   <!-- Structured Data (JSON-LD) for Google Rich Results & AEO (SKILL.md A7) -->
@@ -48,7 +48,7 @@
         "name": "Koffee Space",
         "alternateName": "The Koffee Chronicle",
         "url": "https://koffee.space/",
-        "image": "https://koffee.space/og-preview.png",
+        "image": "https://placehold.co/1200x630/131209/D4A359?text=THE+KOFFEE+CHRONICLE",
         "description": "Independent systems architecture and full-stack product engineering studio specializing in Flutter Android apps, FastAPI microservices, Supabase, and AWS CloudFront edge deployments.",
         "email": "hello@koffee.space",
         "founder": {
@@ -1731,204 +1731,244 @@
       });
     }, { rootMargin: '0px 0px -20% 0px', threshold: 0.5 });
 
-    document.querySelectorAll('.tagline-word').forEach(word => wordObserver.observe(word));
+    wordObserver.observe(taglineEl);
+    taglineEl.querySelectorAll('.tagline-word').forEach((w, idx) => {
+      w.style.transitionDelay = `${idx * 35}ms`;
+      wordObserver.observe(w);
+    });
 
-    // 6. Case Study Filter
-    document.querySelectorAll('.filter-btn').forEach(btn => {
+    // 6. Interactive Case Study Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => {
+        const cat = btn.dataset.filter;
+        filterBtns.forEach(b => {
           b.classList.remove('bg-sindoor', 'text-white');
           b.classList.add('text-secondary');
         });
         btn.classList.add('bg-sindoor', 'text-white');
         btn.classList.remove('text-secondary');
 
-        const filter = btn.dataset.filter;
-        document.querySelectorAll('.project-card').forEach(card => {
-          const cats = card.dataset.category;
-          card.classList.toggle('hidden', !(filter === 'all' || cats.includes(filter)));
+        projectCards.forEach(card => {
+          const categories = card.dataset.category;
+          if (cat === 'all' || categories.includes(cat)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
         });
       });
     });
 
-    // 7. Interactive Scope Estimator
-    const rates = {
-      USD: { symbol: '$', mult: 1 },
-      INR: { symbol: '₹', mult: 84.5 },
-      EUR: { symbol: '€', mult: 0.92 },
-      GBP: { symbol: '£', mult: 0.79 }
-    };
+    // 7. Interactive Scope & Currency Comparator
+    const rates = { USD: 1, INR: 86, EUR: 0.94, GBP: 0.79 };
+    const symbols = { USD: '$', INR: '₹', EUR: '€', GBP: '£' };
     let activeCurrency = 'USD';
 
     function updateEstimate() {
       const arch = document.getElementById('archSelect').value;
-      const baseMap = {
-        flutter: { days: 5, usd: 520 },
-        fastapi: { days: 4, usd: 460 },
-        supabase: { days: 5, usd: 580 },
-        aws: { days: 2, usd: 320 },
-        fullstack: { days: 9, usd: 1150 }
-      };
+      const checks = document.querySelectorAll('.mod-check:checked').length;
+      
+      let baseDaysMin = 6, baseDaysMax = 10;
+      let baseCostMin = 600, baseCostMax = 1000;
 
-      let checkedCount = 0;
-      document.querySelectorAll('.mod-check').forEach(cb => {
-        if (cb.checked) checkedCount++;
-      });
+      if (arch === 'fastapi') { baseDaysMin = 4; baseDaysMax = 7; baseCostMin = 450; baseCostMax = 750; }
+      else if (arch === 'supabase') { baseDaysMin = 5; baseDaysMax = 8; baseCostMin = 500; baseCostMax = 850; }
+      else if (arch === 'aws') { baseDaysMin = 2; baseDaysMax = 4; baseCostMin = 300; baseCostMax = 500; }
+      else if (arch === 'fullstack') { baseDaysMin = 9; baseDaysMax = 15; baseCostMin = 950; baseCostMax = 1500; }
 
-      const base = baseMap[arch];
-      const minDays = base.days + checkedCount;
-      const maxDays = Math.round(minDays * 1.45);
-      const minUsd = base.usd + checkedCount * 95;
-      const maxUsd = Math.round(minUsd * 1.55);
+      const addDays = checks * 1;
+      const addCost = checks * 120;
 
-      const agMinDays = Math.round(minDays * 3.1);
-      const agMaxDays = Math.round(maxDays * 3.4);
-      const agMinUsd = Math.round(minUsd * 3.8);
-      const agMaxUsd = Math.round(maxUsd * 4.3);
+      const dMin = baseDaysMin + Math.floor(addDays / 2);
+      const dMax = baseDaysMax + addDays;
+      const cMin = (baseCostMin + addCost);
+      const cMax = (baseCostMax + addCost * 1.5);
 
-      const c = rates[activeCurrency] || rates.USD;
-      const fmt = n => Math.round(n * c.mult).toLocaleString();
+      const r = rates[activeCurrency] || 1;
+      const sym = symbols[activeCurrency] || '$';
 
-      document.getElementById('studioDays').textContent = `${minDays} to ${maxDays} days`;
-      document.getElementById('studioCost').textContent = `${c.symbol}${fmt(minUsd)} to ${c.symbol}${fmt(maxUsd)}`;
-      document.getElementById('agencyDays').textContent = `${agMinDays} to ${agMaxDays} days`;
-      document.getElementById('agencyCost').textContent = `${c.symbol}${fmt(agMinUsd)} to ${c.symbol}${fmt(agMaxUsd)}`;
-      document.getElementById('geoStatus').textContent = `Currency: ${activeCurrency} (${c.symbol})`;
+      const studioDaysText = `${dMin} to ${dMax} days`;
+      const studioCostText = `${sym}${Math.round(cMin * r).toLocaleString()} to ${sym}${Math.round(cMax * r).toLocaleString()}`;
+      
+      const agencyDaysMin = Math.round(dMin * 3.2);
+      const agencyDaysMax = Math.round(dMax * 3.5);
+      const agencyCostMin = Math.round(cMin * 3.8);
+      const agencyCostMax = Math.round(cMax * 4.2);
+
+      const agencyDaysText = `${agencyDaysMin} to ${agencyDaysMax} days`;
+      const agencyCostText = `${sym}${Math.round(agencyCostMin * r).toLocaleString()} to ${sym}${Math.round(agencyCostMax * r).toLocaleString()}`;
+
+      document.getElementById('studioDays').innerText = studioDaysText;
+      document.getElementById('studioCost').innerText = studioCostText;
+      document.getElementById('agencyDays').innerText = agencyDaysText;
+      document.getElementById('agencyCost').innerText = agencyCostText;
+      document.getElementById('geoStatus').innerText = `Currency: ${activeCurrency} (${sym})`;
     }
 
-    // 8. Accordion FAQ
+    updateEstimate();
+
+    // 8. FAQ Accordion
     document.querySelectorAll('.faq-trigger').forEach(trigger => {
       trigger.addEventListener('click', () => {
+        const expanded = trigger.getAttribute('aria-expanded') === 'true';
         const panel = trigger.nextElementSibling;
         const icon = trigger.querySelector('i');
-        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
 
-        trigger.setAttribute('aria-expanded', String(!isOpen));
-        panel.classList.toggle('hidden', isOpen);
-        icon.classList.toggle('rotate-180', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!expanded));
+        panel.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180', !expanded);
       });
     });
 
-    // 9. Modal System (Hidden by Default)
-    const modal = document.getElementById('detailModal');
-    const modalKicker = document.getElementById('modalKicker');
+    // 9. Progressive Disclosure Modal Engine
+    const modalShell = document.getElementById('detailModal');
     const modalTitle = document.getElementById('modalTitle');
+    const modalKicker = document.getElementById('modalKicker');
     const modalBody = document.getElementById('modalBody');
+    const closeModalBtn = document.getElementById('closeModalBtn');
 
-    const modalLibrary = {
+    const modalData = {
       mvp: {
-        kicker: 'TRACK 01 · FULL STACK MVP',
-        title: '0 to 1 MVP Build',
-        html: '<p>End to end Flutter mobile or Next.js web application paired with FastAPI or Supabase backend, authentication, payments, and cloud deployment.</p>'
+        kicker: 'TRACK 01 · 0 TO 1 MVP',
+        title: 'Full-Stack Product Engineering',
+        body: 'From wireframes to signed APKs and production cloud deployments in 10-18 days. Includes Flutter mobile state architecture, FastAPI async endpoints, Supabase authentication, and automated GitHub Actions CI/CD pipeline.'
       },
       debug: {
         kicker: 'TRACK 02 · CODEBASE RESCUE',
-        title: 'Debugging & Performance Refactor',
-        html: '<p>48 hour diagnostic audit followed by clean pull requests fixing Riverpod/Provider leaks, SQL query latency, and payment webhooks.</p>'
+        title: '48-Hour Triage & Optimization',
+        body: 'Rapid diagnostic audit for existing Flutter apps and FastAPI backends. We fix state management leaks, SQL query bottlenecks, N+1 serialization issues, and Razorpay webhook verification failures.'
       },
       cloud: {
-        kicker: 'TRACK 03 · EDGE INFRASTRUCTURE',
-        title: 'Cloud & Edge Hardening',
-        html: '<p>AWS CloudFront CDN, S3 buckets, Docker containers, Nginx reverse proxies, and PostgreSQL row-level security provisioned on your accounts.</p>'
+        kicker: 'TRACK 03 · CLOUD INFRASTRUCTURE',
+        title: 'AWS CloudFront & Edge Setup',
+        body: 'Production hardening for your web apps and APIs. Custom FQDN DNS configuration on Hostinger, SSL certificate provisioning, AWS CloudFront CDN caching rules, and Docker/Nginx reverse proxy deployment.'
       },
       advisory: {
         kicker: 'TRACK 04 · TECHNICAL ADVISORY',
-        title: '1 on 1 Architecture Audit',
-        html: '<p>60 minute live engineering session with a written architecture decision record covering schema design, vendor quotes, and CI/CD.</p>'
+        title: '1-on-1 Architecture Audit',
+        body: 'Direct consultation with Siddharth Roy. Review your database schema, security posture, concurrency limits, and product roadmap before committing to a full rewrite.'
       },
       news: {
-        kicker: 'CASE · 10,400+ MAU',
-        title: 'Multi-Modal News Engine',
-        html: '<p>Unified Flutter Android and Next.js publishing platform backed by Supabase PostgreSQL, lifting average session length by 25.4%.</p>'
+        kicker: 'ARCHIVE · SAAS PLATFORM',
+        title: 'Multi-Modal News Engine (10,400+ MAU)',
+        body: 'Engineered a lightning-fast news publishing platform with Flutter mobile app and Next.js web frontend. Reduced bounce rate by 25% through skeleton loaders, Hive local storage caching, and optimized Supabase queries.'
       },
       social: {
-        kicker: 'CASE · PLAY STORE BETA',
-        title: 'Social Discovery Platform',
-        html: '<p>Production Flutter app featuring Google ML Kit verification, GoRouter deep links, and server-verified Razorpay payment hooks.</p>'
+        kicker: 'ARCHIVE · SOCIAL DISCOVERY',
+        title: 'Secure Social Platform (Play Store Beta)',
+        body: 'Built end-to-end with Flutter, GoRouter navigation, Riverpod state management, and strict Row Level Security (RLS). Integrated idempotent Razorpay payment webhooks with zero leakage.'
       },
       cms: {
-        kicker: 'CASE · 24,800+ ARTICLES',
-        title: 'Offline-First Editorial CMS',
-        html: '<p>Encrypted Hive box local cache paired with incremental Supabase sync and rich-text Quill previews for zero-signal reading.</p>'
+        kicker: 'ARCHIVE · OFFLINE CMS',
+        title: 'Modular Offline-First CMS (24k+ Articles)',
+        body: 'Robust content management system with Hive box local persistence. Ensures 100% availability in intermittent connectivity zones with Quill editor integration and instant cloud sync.'
       },
       hrms: {
-        kicker: 'CASE · 210+ SEATS',
-        title: 'Geo-Fenced Workforce HRMS',
-        html: '<p>Automated selfie and GPS attendance check-ins with manager approval flows, reducing weekly HR admin time by 31%.</p>'
+        kicker: 'ARCHIVE · ENTERPRISE HRMS',
+        title: 'Geo-Fenced Workforce Suite (210+ Seats)',
+        body: 'Enterprise Flutter mobile app deployed for 200+ employee team. Features selfie check-in, GPS geofencing attendance, automated task workflows, and secure Python backend authentication.'
       },
       privacy: {
-        kicker: 'LEGAL · PRIVACY',
-        title: 'Privacy Policy',
-        html: '<p>Contact details submitted via koffee.space are used solely to respond to your project inquiry and are never sold or shared.</p>'
+        kicker: 'LEGAL · PRIVACY POLICY',
+        title: 'Data Privacy & NDA Compliance',
+        body: 'Koffee Space respects your intellectual property. All source code, database credentials, and business logic shared during discovery and development are protected under mutual NDA. We never store or reuse proprietary code.'
       },
       terms: {
-        kicker: 'LEGAL · TERMS',
-        title: 'Terms of Service',
-        html: '<p>All engagements are governed by a written statement of work with milestone checkpoints and full IP transfer upon payment.</p>'
+        kicker: 'LEGAL · TERMS OF SERVICE',
+        title: 'Milestone & Warranty Terms',
+        body: 'Projects are structured in 72-hour testable milestones with signed APKs and live staging URLs. Every build includes a 30-day post-launch stability warranty and 100% ownership transfer upon final milestone sign-off.'
       },
       '404': {
-        kicker: 'ERROR 404',
-        title: 'Page off the press',
-        html: '<p>The requested route does not exist in this edition of koffee.space. Return to the main architecture index below.</p>'
+        kicker: 'SYSTEM · 404 DIAGNOSTIC',
+        title: 'Route Not Found',
+        body: 'The requested system endpoint does not exist on this server. Return to the primary broadsheet index using the link below.'
       }
     };
 
     function openModalKey(key) {
-      const item = modalLibrary[key];
-      if (!item) return;
-      modalKicker.textContent = item.kicker;
-      modalTitle.textContent = item.title;
-      modalBody.innerHTML = item.html;
-      modal.classList.remove('hidden');
-      modal.setAttribute('aria-hidden', 'false');
-      requestAnimationFrame(() => modal.classList.add('is-active'));
+      const data = modalData[key];
+      if (!data) return;
+      modalKicker.innerText = data.kicker;
+      modalTitle.innerText = data.title;
+      modalBody.innerHTML = `<p>${data.body}</p>`;
+      modalShell.classList.add('is-active');
+      modalShell.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
-      modal.classList.remove('is-active');
-      modal.setAttribute('aria-hidden', 'true');
-      setTimeout(() => {
-        if (!modal.classList.contains('is-active')) modal.classList.add('hidden');
-      }, 300);
+      modalShell.classList.remove('is-active');
+      modalShell.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
     }
 
-    document.getElementById('closeModalBtn').addEventListener('click', closeModal);
-    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('is-active')) closeModal(); });
+    closeModalBtn.addEventListener('click', closeModal);
+    modalShell.addEventListener('click', (e) => {
+      if (e.target === modalShell) closeModal();
+    });
 
-    // 10. Form Validation (SKILL.md B8 & B9)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        setDrawer(false);
+      }
+    });
+
+    // 10. Client-Side Form Validation (SKILL.md B10)
     const consultForm = document.getElementById('consultForm');
-    if (consultForm) {
-      consultForm.addEventListener('submit', e => {
-        e.preventDefault();
-        const name = document.getElementById('clientName').value.trim();
-        const email = document.getElementById('clientEmail').value.trim();
-        const brief = document.getElementById('projectBrief').value.trim();
-        const feedback = document.getElementById('formFeedback');
+    const clientName = document.getElementById('clientName');
+    const clientEmail = document.getElementById('clientEmail');
+    const projectBrief = document.getElementById('projectBrief');
+    const formFeedback = document.getElementById('formFeedback');
 
-        const nameOk = name.length >= 2;
-        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        const briefOk = brief.length >= 15;
+    consultForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
 
-        document.getElementById('nameError').classList.toggle('hidden', nameOk);
-        document.getElementById('emailError').classList.toggle('hidden', emailOk);
-        document.getElementById('briefError').classList.toggle('hidden', briefOk);
+      const nameVal = clientName.value.trim();
+      const emailVal = clientEmail.value.trim();
+      const briefVal = projectBrief.value.trim();
 
-        if (!nameOk || !emailOk || !briefOk) {
-          feedback.classList.remove('hidden');
-          feedback.classList.add('border-sindoor');
-          feedback.textContent = 'Dispatch paused. Please check the highlighted fields.';
-          return;
-        }
+      const nameErr = document.getElementById('nameError');
+      const emailErr = document.getElementById('emailError');
+      const briefErr = document.getElementById('briefError');
 
-        feedback.classList.remove('hidden', 'border-sindoor');
-        feedback.classList.add('border-zari');
-        feedback.textContent = `Brief logged for ${name}. Siddharth will reply to ${email} within 12 hours.`;
-        e.target.reset();
-      });
-    }
+      if (nameVal.length < 2) {
+        nameErr.classList.remove('hidden');
+        valid = false;
+      } else {
+        nameErr.classList.add('hidden');
+      }
 
-    updateEstimate();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailVal)) {
+        emailErr.classList.remove('hidden');
+        valid = false;
+      } else {
+        emailErr.classList.add('hidden');
+      }
+
+      if (briefVal.length < 15) {
+        briefErr.classList.remove('hidden');
+        valid = false;
+      } else {
+        briefErr.classList.add('hidden');
+      }
+
+      if (valid) {
+        formFeedback.classList.remove('hidden', 'border-sindoor', 'text-sindoor');
+        formFeedback.classList.add('border-zari', 'text-zari');
+        formFeedback.innerText = `Thank you, ${nameVal}. Your brief has been securely dispatched to hello@koffee.space. Siddharth Roy will respond within 12 hours.`;
+        consultForm.reset();
+      } else {
+        formFeedback.classList.remove('hidden', 'border-zari', 'text-zari');
+        formFeedback.classList.add('border-sindoor', 'text-sindoor');
+        formFeedback.innerText = 'Submission failed. Please correct the highlighted errors above.';
+      }
+    });
   </script>
 </body>
 </html>
