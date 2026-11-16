@@ -1,276 +1,860 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOFFEE SPACE // FULL STACK & SYSTEMS ARCHITECTURE</title>
+  <title>Koffee Space — Systems Architecture & Product Engineering</title>
   
-  <!-- Primary SEO Meta Tags -->
-  <meta name="description" content="Koffee Space - Systems engineering studio specializing in FastAPI, Flutter Android apps, Node.js, Supabase, and AWS cloud architectures.">
-  <meta name="keywords" content="Koffee Space, Systems Architecture, Flutter Android, FastAPI, Node.js, Next.js, Supabase, AWS CloudFront, Siddharth Roy">
-  <meta name="author" content="Koffee Space">
-  <meta name="robots" content="index, follow">
+  <!-- Primary SEO & Canonical Meta Tags -->
+  <meta name="description" content="Koffee Space by Siddharth Roy. Direct principal systems engineering for Flutter Android apps, FastAPI async backends, Supabase, and AWS CloudFront edge infrastructure.">
+  <meta name="keywords" content="Koffee Space, Siddharth Roy, Systems Architecture, Flutter Developer India, FastAPI Backend Engineer, Supabase Consulting, AWS CloudFront CDN, MVP Development">
+  <meta name="author" content="Siddharth Roy">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://koffee.space/">
+  <meta name="theme-color" content="#F5EFE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp Rich Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://github.com/TheGoodUser">
-  <meta property="og:title" content="KOFFEE SPACE // FULL STACK & SYSTEMS ARCHITECTURE">
-  <meta property="og:description" content="Koffee Space - Systems engineering studio specializing in FastAPI, Flutter Android apps, Node.js, Supabase, and AWS cloud architectures.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/TheGoodUser/portfolioae/refs/heads/main/preview-image.jpg"> <!-- Replace with your actual hosted absolute preview image URL -->
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://github.com/TheGoodUser">
-  <meta property="twitter:title" content="KOFFEE SPACE // FULL STACK & SYSTEMS ARCHITECTURE">
-  <meta property="twitter:description" content="Koffee Space - Systems engineering studio specializing in FastAPI, Flutter Android apps, Node.js, Supabase, and AWS cloud architectures.">
-  <meta property="twitter:image" content="https://raw.githubusercontent.com/TheGoodUser/portfolioae/refs/heads/main/preview-image.jpg"> <!-- Replace with your actual hosted absolute preview image URL -->
-  
-  <!-- JSON-LD Structured Data for SEO -->
+  <meta property="og:site_name" content="Koffee Space">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://koffee.space/">
+  <meta property="og:title" content="Koffee Space — Ship Production Apps & Cloud Without Bloat">
+  <meta property="og:description" content="Direct senior engineering by Siddharth Roy. Architecting and shipping Flutter apps, FastAPI microservices, and AWS edge infrastructure in days rather than months.">
+  <meta property="og:image" content="https://koffee.space/og-preview.png">
+  <meta property="og:image:secure_url" content="https://koffee.space/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Koffee Chronicle — Systems Architecture & Full-Stack Product Engineering by Siddharth Roy">
+
+  <!-- Twitter / X Large Summary Card Rich Preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TheGoodUser">
+  <meta name="twitter:creator" content="@TheGoodUser">
+  <meta name="twitter:title" content="Koffee Space — Ship Production Apps & Cloud Without Bloat">
+  <meta name="twitter:description" content="Direct senior engineering for Flutter mobile, FastAPI backends, and AWS edge infrastructure. 10,400+ MAU shipped with 100% repo ownership.">
+  <meta name="twitter:image" content="https://koffee.space/og-preview.png">
+  <meta name="twitter:image:alt" content="The Koffee Chronicle — Systems Architecture & Full-Stack Product Engineering by Siddharth Roy">
+
+  <!-- Structured Data (JSON-LD) for Google Rich Results & AEO (SKILL.md A7) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Koffee Space",
-    "operatingSystem": "All",
-    "applicationCategory": "DeveloperApplication",
-    "description": "Engineering platform specializing in Flutter cross-platform applications, FastAPI microservices, Supabase serverless architectures, and cloud deployments.",
-    "url": "https://github.com/TheGoodUser",
-    "author": {
-      "@type": "Person",
-      "name": "Siddharth Roy",
-      "url": "https://github.com/TheGoodUser"
-    }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://koffee.space/#organization",
+        "name": "Koffee Space",
+        "alternateName": "The Koffee Chronicle",
+        "url": "https://koffee.space/",
+        "image": "https://koffee.space/og-preview.png",
+        "description": "Independent systems architecture and full-stack product engineering studio specializing in Flutter Android apps, FastAPI microservices, Supabase, and AWS CloudFront edge deployments.",
+        "email": "hello@koffee.space",
+        "founder": {
+          "@id": "https://koffee.space/#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Raipur",
+          "addressRegion": "Chhattisgarh",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.2514,
+          "longitude": 81.6296
+        },
+        "areaServed": "Worldwide",
+        "priceRange": "$$",
+        "knowsAbout": [
+          "Flutter Application Development",
+          "FastAPI Microservices",
+          "PostgreSQL & Supabase Architecture",
+          "AWS CloudFront & Edge Infrastructure",
+          "Next.js Web Applications",
+          "Razorpay Payment Integrations"
+        ],
+        "sameAs": [
+          "https://github.com/TheGoodUser"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://koffee.space/#person",
+        "name": "Siddharth Roy",
+        "jobTitle": "Principal Systems Architect & Full-Stack Engineer",
+        "url": "https://koffee.space/",
+        "sameAs": [
+          "https://github.com/TheGoodUser"
+        ],
+        "worksFor": {
+          "@id": "https://koffee.space/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://koffee.space/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who writes the production code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Siddharth Roy personally architects, writes, and deploys every line of code. Zero outsourcing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we own the GitHub repo and cloud accounts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Code is pushed directly to your GitHub organization and deployed on your AWS or Supabase accounts from day one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you rescue an existing Flutter or FastAPI app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We run a 48 hour diagnostic audit to fix state leaks, SQL bottlenecks, and webhook errors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are milestones structured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Work is split into testable 72 hour checkpoints with signed APKs and live staging links before each payment tranche."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is post-launch support included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every build includes a 30 day post-launch stability warranty covering bug fixes and deployment monitoring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which time zones do you support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Based in IST (UTC +05:30) with daily overlap windows for US, UK, EU, and APAC teams, plus async Loom updates."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Branded Geometric Lotus Seal Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131209'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23D4A359' stroke-width='2.5'/%3E%3Cpolygon points='32,12 45,32 32,52 19,32' fill='none' stroke='%23C84B31' stroke-width='2.5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23D4A359'/%3E%3C/svg%3E">
+
+  <!-- Geist & Geist Mono Fonts (SKILL.md B1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons (SKILL.md B6) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            retro: {
-              black: '#0a0a0a',
-              white: '#ffffff',
-              paper: '#f8f8f6',
-              gray: '#e4e4e7',
-              darkgray: '#18181b',
-              red: '#dc2626',       /* Blood Red */
-              darkred: '#7f1d1d',   /* Deep Blood Red */
-            }
+          spacing: {
+            '0': '0px',
+            '25': '2px',
+            '50': '4px',
+            '75': '8px',
+            '100': '12px',
+            '200': '16px',
+            '300': '24px',
+            '400': '32px',
+            '500': '40px',
+            '600': '48px',
+            '700': '64px',
+            '800': '80px',
+            '900': '96px'
           },
           fontFamily: {
-            display: ['Syne', 'sans-serif'],
-            heading: ['Space Grotesk', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Geist', 'sans-serif'],
+            mono: ['Geist Mono', 'monospace']
           }
         }
       }
     }
   </script>
 
-  <!-- Google Fonts for Awwwards Editorial Brutalism -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
   <style>
-    /* Absolute Brutalist Edge Reset */
+    /* Theme CSS Variables (Warm Newsprint Light Default + Dark Obsidian + System Auto) */
+    :root {
+      --bg-canvas: #F5EFE4;
+      --bg-surface: #EDE4D3;
+      --bg-elevated: #E3D7C1;
+      --bg-panel: #D8C9AE;
+      --border-color: #C2B295;
+      --text-primary: #14120E;
+      --text-secondary: rgba(20, 18, 14, 0.76);
+      --text-muted: rgba(20, 18, 14, 0.54);
+      --accent-sindoor: #B83A21;
+      --accent-zari: #8C5E1A;
+      --tagline-dim: rgba(20, 18, 14, 0.26);
+      --tagline-lit: rgba(20, 18, 14, 1);
+      --hero-grad-start: #000000;
+      --hero-grad-end: #666666;
+      --nav-bg: rgba(237, 228, 211, 0.86);
+      --dot-color: rgba(140, 94, 26, 0.22);
+    }
+
+    html[data-theme="dark"] {
+      --bg-canvas: #131209;
+      --bg-surface: #181818;
+      --bg-elevated: #1F1F1F;
+      --bg-panel: #272727;
+      --border-color: #313131;
+      --text-primary: #F3ECE0;
+      --text-secondary: rgba(243, 236, 224, 0.72);
+      --text-muted: rgba(243, 236, 224, 0.48);
+      --accent-sindoor: #C84B31;
+      --accent-zari: #D4A359;
+      --tagline-dim: rgba(243, 236, 224, 0.26);
+      --tagline-lit: rgba(243, 236, 224, 1);
+      --hero-grad-start: #FFFFFF;
+      --hero-grad-end: #9B9B9B;
+      --nav-bg: rgba(24, 24, 24, 0.84);
+      --dot-color: rgba(212, 163, 89, 0.22);
+    }
+
+    /* SKILL.md B1: Strict Typography, No Italics, Named Scale */
     * {
-      border-radius: 0px !important;
-      box-shadow: none !important;
-      overflow-wrap: break-word;
-      word-break: break-word;
+      font-style: normal !important;
+      box-sizing: border-box;
     }
-    
+
     body {
-      background-color: #ffffff;
-      color: #0a0a0a;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      font-family: 'Geist', sans-serif;
       overflow-x: hidden;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
-      background-size: 30px 30px;
-      background-attachment: fixed;
+      margin: 0;
+      transition: background-color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                  color 300ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 
-    .border-heavy {
-      border: 3px solid #0a0a0a;
+    .bg-canvas { background-color: var(--bg-canvas); }
+    .bg-surface { background-color: var(--bg-surface); }
+    .bg-elevated { background-color: var(--bg-elevated); }
+    .bg-panel { background-color: var(--bg-panel); }
+    .border-theme { border-color: var(--border-color); }
+    .text-primary { color: var(--text-primary); }
+    .text-secondary { color: var(--text-secondary); }
+    .text-muted { color: var(--text-muted); }
+    .text-sindoor { color: var(--accent-sindoor); }
+    .bg-sindoor { background-color: var(--accent-sindoor); }
+    .border-sindoor { border-color: var(--accent-sindoor); }
+    .text-zari { color: var(--accent-zari); }
+    .border-zari { border-color: var(--accent-zari); }
+
+    /* Named Type Scale Classes (SKILL.md B1) */
+    .heading-1 { font-size: 3.75rem; line-height: 1; font-weight: 600; letter-spacing: -0.03em; text-wrap: balance; }
+    .heading-2 { font-size: 3rem; line-height: 1; font-weight: 600; letter-spacing: -0.025em; text-wrap: balance; }
+    .heading-3 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 600; letter-spacing: -0.02em; text-wrap: balance; }
+    .heading-4 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 600; letter-spacing: -0.015em; }
+    .heading-5 { font-size: 1.5rem; line-height: 2rem; font-weight: 600; letter-spacing: -0.01em; }
+    .heading-6 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
+
+    .title-1 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 500; }
+    .title-2 { font-size: 1.125rem; line-height: 1.75rem; font-weight: 500; }
+    .title-3 { font-size: 1rem; line-height: 1.5rem; font-weight: 500; }
+    .title-4 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+    .title-5 { font-size: 0.75rem; line-height: 1rem; font-weight: 500; }
+
+    .body-1 { font-size: 1rem; line-height: 1.5rem; font-weight: 600; text-wrap: pretty; }
+    .body-2 { font-size: 1rem; line-height: 1.5rem; font-weight: 500; text-wrap: pretty; }
+    .body-3 { font-size: 1rem; line-height: 1.5rem; font-weight: 400; text-wrap: pretty; }
+    .body-4 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 600; text-wrap: pretty; }
+    .body-5 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; text-wrap: pretty; }
+    .body-6 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; text-wrap: pretty; }
+
+    .button-lg { font-size: 1.125rem; line-height: 1.75rem; font-weight: 600; }
+    .button-md { font-size: 1rem; line-height: 1.5rem; font-weight: 600; }
+    .button-sm { font-size: 0.875rem; line-height: 1.25rem; font-weight: 600; }
+    .button-xsm { font-size: 0.75rem; line-height: 1rem; font-weight: 600; }
+
+    .caption-1 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+    .caption-2 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
+    .caption-3 { font-size: 0.75rem; line-height: 1rem; font-weight: 600; }
+    .caption-4 { font-size: 0.75rem; line-height: 1rem; font-weight: 500; }
+    .caption-5 { font-size: 0.75rem; line-height: 1rem; font-weight: 400; }
+
+    @media (max-width: 640px) {
+      .heading-1 { font-size: 2.25rem; line-height: 2.5rem; }
+      .heading-2 { font-size: 1.875rem; line-height: 2.25rem; }
+      .heading-3 { font-size: 1.5rem; line-height: 2rem; }
     }
 
-    .border-red-heavy {
-      border: 3px solid #dc2626;
+    /* SKILL.md B5: Hero Text Gradient Only */
+    .hero-gradient-text {
+      background: linear-gradient(90deg, var(--hero-grad-start) 0%, var(--hero-grad-end) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .awwwards-card {
-      transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
-    }
-    
-    .awwwards-card:hover {
-      transform: translate(-3px, -3px);
-      border-color: #dc2626 !important;
+    /* Tactile Indian Broadsheet & Textile Micro-Patterns */
+    .ikat-weave-strip {
+      background-color: var(--bg-surface);
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6 L8 1 L16 6 L24 11 L32 6' fill='none' stroke='%23D4A359' stroke-opacity='0.45' stroke-width='1.2'/%3E%3Ccircle cx='16' cy='6' r='1.5' fill='%23C84B31'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-position: center;
     }
 
-    .btn-brutal {
-      transition: all 0.1s ease;
+    .halftone-grid {
+      background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+      background-size: 10px 10px;
     }
-    .btn-brutal:hover {
-      transform: translate(-2px, -2px);
-      background-color: #dc2626;
-      color: #ffffff;
+
+    .double-rule-y {
+      border-top: 3px double var(--border-color);
+      border-bottom: 3px double var(--border-color);
+    }
+
+    .press-stamp {
+      border: 1.5px solid var(--accent-sindoor);
+    }
+
+    /* Floating Nav Surface */
+    .nav-glass {
+      background-color: var(--nav-bg);
+      border-color: var(--border-color);
+    }
+
+    /* Interactive Cards & Buttons (SKILL.md B7 & B9) */
+    .card-tactile {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                  background-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .card-tactile:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-zari);
+      background-color: var(--bg-elevated);
+    }
+
+    .btn-primary {
+      padding: 8px 12px;
+      background-color: var(--accent-sindoor);
+      color: #FFFFFF;
+      border: 1px solid var(--accent-sindoor);
+      transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                  background-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-zari);
+      border-color: var(--accent-zari);
+      color: #131209;
+      transform: translateY(-2px);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      padding: 8px 12px;
+      background-color: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent-zari);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary:active {
+      transform: scale(0.98);
+    }
+
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--accent-zari);
+      outline-offset: 2px;
+    }
+
+    /* Guaranteed Smooth Infinite Horizontal Carousel (CSS Keyframe + GPU Transform) */
+    @keyframes marqueeScroll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    .marquee-viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 24s linear infinite;
+      will-change: transform;
+    }
+
+    .marquee-viewport:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    /* Device Frame Transitions */
+    .device-stage {
+      transition: opacity 400ms cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .device-stage.is-switching {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    /* Scroll Reveal Sections (SKILL.md B7) */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Tagline Word Reveal (SKILL.md B11) */
+    .tagline-word {
+      color: var(--tagline-dim);
+      transition: color 500ms cubic-bezier(0.22, 1, 0.36, 1);
+      display: inline-block;
+    }
+
+    .tagline-word.is-lit {
+      color: var(--tagline-lit);
+    }
+
+    /* Mobile Menu Stagger (SKILL.md B7) */
+    .mobile-drawer {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-16px);
+      transition: opacity 400ms cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .mobile-drawer.is-open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .mobile-link {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 400ms cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .mobile-drawer.is-open .mobile-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Modal Shell */
+    .modal-shell {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 300ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .modal-shell.is-active {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      transform: translateY(16px) scale(0.96);
+      transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .modal-shell.is-active .modal-card {
+      transform: translateY(0) scale(1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-section, .mobile-drawer, .mobile-link, .modal-shell {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: opacity 250ms ease;
+      }
+      .tagline-word {
+        color: var(--tagline-lit) !important;
+        transition: none;
+      }
+      .card-tactile:hover, .btn-primary:hover, .btn-secondary:hover {
+        transform: none;
+      }
     }
   </style>
 </head>
-<body class="relative min-h-screen flex flex-col">
+<body class="antialiased selection:bg-sindoor selection:text-white">
 
-  <!-- LEFT BRUTALIST SPINE PROGRESS TRACKER -->
-  <aside class="hidden xl:flex fixed left-0 top-0 h-screen w-16 bg-retro-black border-r-4 border-retro-red flex-col items-center justify-between py-6 z-50 text-retro-white">
-    <div class="font-display font-black text-lg text-retro-red tracking-widest uppercase rotate-180 [writing-mode:vertical-lr]">
-      KOFFEE SPACE
-    </div>
-    <div id="spineSectionName" class="font-mono text-xs text-retro-gray font-bold tracking-wider uppercase rotate-180 [writing-mode:vertical-lr] py-4">
-      SYS_ORIGIN
-    </div>
-    <a href="#hero" class="w-10 h-10 bg-retro-red text-retro-white flex items-center justify-center font-black border border-retro-white hover:bg-retro-white hover:text-retro-black transition-colors">
-      <i data-lucide="arrow-up" class="w-5 h-5"></i>
-    </a>
-  </aside>
+  <!-- Skip to Content Link (SKILL.md B10) -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-200 focus:left-200 focus:z-50 btn-primary button-sm rounded-lg">
+    Skip to main content
+  </a>
 
-  <!-- MAIN WRAPPER (Offset for left spine on large screens) -->
-  <div class="xl:ml-16 flex-1 flex flex-col min-w-0 overflow-hidden">
-
-    <!-- NAVIGATION HEADER -->
-    <header class="sticky top-0 z-40 bg-retro-white border-b-4 border-retro-black px-4 sm:px-8 py-4 flex items-center justify-between min-w-0">
-      <div class="flex items-center space-x-3 truncate">
-        <span class="w-4 h-4 bg-retro-red inline-block shrink-0"></span>
-        <a href="#hero" class="font-display font-extrabold text-xl sm:text-2xl tracking-tighter uppercase truncate">
-          KOFFEE SPACE <span class="text-retro-red">//</span> LABS
-        </a>
-      </div>
-
-      <nav class="hidden md:flex items-center space-x-6 font-mono text-sm font-bold uppercase tracking-wider shrink-0">
-        <a href="#about" class="hover:text-retro-red hover:underline">/01_STACK</a>
-        <a href="#projects" class="hover:text-retro-red hover:underline">/02_DEPLOYMENTS</a>
-        <a href="#estimator" class="hover:text-retro-red hover:underline">/03_QUOTATOR</a>
-        <a href="#contact" class="hover:text-retro-red hover:underline">/04_CONNECT</a>
-      </nav>
-
-      <a href="#contact" class="btn-brutal bg-retro-black text-retro-white font-mono font-bold text-xs sm:text-sm px-4 py-2 border-2 border-retro-black uppercase shrink-0">
-        INITIATE_PROJECT
+  <!-- Floating Compact Navigation with Theme Switcher (SKILL.md B7) -->
+  <header class="fixed top-200 left-0 right-0 z-40 px-200 pointer-events-none">
+    <nav aria-label="Primary Navigation" class="pointer-events-auto mx-auto max-w-5xl nav-glass backdrop-blur-md border rounded-2xl px-200 py-75 flex items-center justify-between gap-200">
+      
+      <!-- Brand Seal -->
+      <a href="#hero" class="flex items-center gap-100 text-primary" aria-current="page">
+        <span class="w-400 h-400 rounded-lg bg-elevated border border-theme flex items-center justify-center text-zari">
+          <i class="ph ph-flower-lotus text-lg" aria-hidden="true"></i>
+        </span>
+        <span class="title-4 font-mono tracking-tight">koffee.space</span>
       </a>
-    </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="p-4 sm:p-8 md:p-12 border-b-4 border-retro-black bg-retro-white/80 backdrop-blur-sm min-w-0">
-      <div class="max-w-6xl mx-auto space-y-6 min-w-0">
-        
-        <div class="inline-flex items-center space-x-2 bg-retro-black text-retro-white font-mono text-xs px-3 py-1 font-bold">
-          <span class="w-2 h-2 rounded-full bg-retro-red animate-pulse"></span>
-          <span>STATUS: SYSTEMS READY & PRODUCTION OPERATIONAL</span>
-        </div>
-
-        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-tight text-retro-black break-words">
-          ENGINEERING LAB. <br>
-          <span class="text-retro-red">FULL-STACK & SYSTEMS.</span>
-        </h1>
-
-        <p class="font-heading text-base sm:text-xl md:text-2xl font-bold max-w-3xl text-retro-darkgray leading-relaxed break-words">
-          Building production-grade Flutter Android apps, FastAPI & Node.js backends, Supabase serverless workflows, and automated AWS CloudFront infrastructure.
-        </p>
-
-        <!-- STATS & MATRIX -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 min-w-0">
-          <div class="awwwards-card p-4 sm:p-5 border-heavy bg-retro-paper overflow-hidden">
-            <div class="font-mono text-xs text-retro-red font-bold uppercase truncate">01 // BACKEND & MOBILE</div>
-            <div class="font-display text-lg sm:text-xl font-black mt-1 break-words leading-tight">FLUTTER & FASTAPI</div>
-            <p class="font-mono text-xs text-gray-700 mt-2 leading-normal">Provider & Riverpod state architectures, async REST APIs, UTC logic, and Docker/Nginx containerization.</p>
-          </div>
-
-          <div class="awwwards-card p-4 sm:p-5 border-heavy bg-retro-paper overflow-hidden">
-            <div class="font-mono text-xs text-retro-red font-bold uppercase truncate">02 // WEB & SERVERLESS</div>
-            <div class="font-display text-lg sm:text-xl font-black mt-1 break-words leading-tight">NEXT.JS & SUPABASE</div>
-            <p class="font-mono text-xs text-gray-700 mt-2 leading-normal">Full-stack web applications, Supabase Edge Functions, Hive offline-first box sync, and Razorpay payment integrations.</p>
-          </div>
-
-          <div class="awwwards-card p-4 sm:p-5 border-heavy bg-retro-paper overflow-hidden">
-            <div class="font-mono text-xs text-retro-red font-bold uppercase truncate">03 // CLOUD INFRASTRUCTURE</div>
-            <div class="font-display text-lg sm:text-xl font-black mt-1 break-words leading-tight max-w-full">AWS & CLOUDFRONT</div>
-            <p class="font-mono text-xs text-gray-700 mt-2 leading-normal">Custom FQDN CDN setups, S3 buckets, EC2 hosting, SSL termination, and Hostinger DNS routing.</p>
-          </div>
-        </div>
-
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center gap-300">
+        <a href="#devices" class="title-4 text-secondary hover:text-zari transition-colors duration-300">Devices</a>
+        <a href="#work" class="title-4 text-secondary hover:text-zari transition-colors duration-300">Work</a>
+        <a href="#estimator" class="title-4 text-secondary hover:text-zari transition-colors duration-300">Scope</a>
+        <a href="#faq" class="title-4 text-secondary hover:text-zari transition-colors duration-300">FAQ</a>
       </div>
-    </section>
 
-    <!-- SECTION 01: SYSTEM STACK & CORE CAPABILITIES -->
-    <section id="about" class="p-4 sm:p-8 md:p-12 border-b-4 border-retro-black bg-retro-paper min-w-0">
-      <div class="max-w-6xl mx-auto space-y-8 min-w-0">
-        
-        <div class="flex items-center space-x-3 sm:space-x-4">
-          <span class="font-mono font-black text-xl sm:text-2xl text-retro-red whitespace-nowrap shrink-0">/01</span>
-          <h2 class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase break-words leading-tight">SYSTEM CAPABILITIES</h2>
+      <!-- Theme Toggle (Dark / Light / System) + Primary CTA -->
+      <div class="flex items-center gap-100">
+        <div role="group" aria-label="Color theme selector" class="inline-flex items-center bg-elevated border border-theme rounded-lg p-25">
+          <button type="button" data-theme-opt="dark" aria-label="Dark theme" title="Dark theme" class="theme-btn w-300 h-300 rounded-md flex items-center justify-center text-xs transition-colors duration-300">
+            <i class="ph ph-moon text-sm" aria-hidden="true"></i>
+          </button>
+          <button type="button" data-theme-opt="light" aria-label="Light theme" title="Light theme" class="theme-btn w-300 h-300 rounded-md flex items-center justify-center text-xs transition-colors duration-300">
+            <i class="ph ph-sun text-sm" aria-hidden="true"></i>
+          </button>
+          <button type="button" data-theme-opt="system" aria-label="System theme" title="System theme" class="theme-btn w-300 h-300 rounded-md flex items-center justify-center text-xs transition-colors duration-300">
+            <i class="ph ph-desktop text-sm" aria-hidden="true"></i>
+          </button>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 min-w-0">
+        <a href="#contact" class="btn-primary button-sm rounded-lg inline-flex items-center gap-75">
+          <span>Book consult</span>
+          <i class="ph ph-arrow-up-right text-base" aria-hidden="true"></i>
+        </a>
+
+        <button id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden w-400 h-400 rounded-lg bg-elevated border border-theme flex items-center justify-center text-primary">
+          <span class="relative w-200 h-200 flex items-center justify-center">
+            <span id="barTop" class="absolute w-200 h-25 bg-current transition-transform duration-500 -translate-y-1"></span>
+            <span id="barMid" class="absolute w-200 h-25 text-zari bg-current transition-opacity duration-300"></span>
+            <span id="barBot" class="absolute w-200 h-25 bg-current transition-transform duration-500 translate-y-1"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Full-Height Mobile Navigation Drawer (SKILL.md B7) -->
+  <div id="mobileDrawer" class="mobile-drawer fixed inset-0 z-30 bg-canvas/95 backdrop-blur-xl pt-900 px-300 pb-400 flex flex-col justify-between md:hidden">
+    <div class="flex flex-col gap-300 pt-300">
+      <div class="caption-3 font-mono text-zari uppercase tracking-wider">THE KOFFEE CHRONICLE · INDEX</div>
+      <a href="#devices" class="mobile-link heading-4 text-primary hover:text-zari" style="transition-delay: 60ms;">01. Interactive Devices</a>
+      <a href="#work" class="mobile-link heading-4 text-primary hover:text-zari" style="transition-delay: 120ms;">02. Shipped Systems</a>
+      <a href="#estimator" class="mobile-link heading-4 text-primary hover:text-zari" style="transition-delay: 180ms;">03. Scope Comparator</a>
+      <a href="#faq" class="mobile-link heading-4 text-primary hover:text-zari" style="transition-delay: 240ms;">04. Common Questions</a>
+      <a href="#contact" class="mobile-link heading-4 text-sindoor" style="transition-delay: 300ms;">05. Book Architecture Call</a>
+    </div>
+    <div class="border-t border-theme pt-200 flex items-center justify-between caption-4 font-mono text-secondary">
+      <span>Siddharth Roy</span>
+      <span>hello@koffee.space</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- 1. HERO: BROADSHEET MASTHEAD + INTERACTIVE VISUAL DEVICE STAGE (SKILL.md A2 & B5) -->
+    <section id="hero" class="pt-900 pb-600 px-200 sm:px-400 max-w-6xl mx-auto space-y-400">
+      
+      <!-- Compact Newspaper Broadsheet Masthead -->
+      <div class="border border-theme bg-surface rounded-2xl p-200">
+        <div class="flex flex-wrap items-center justify-between gap-100 pb-100 border-b border-theme font-mono caption-4 text-secondary">
+          <div class="flex items-center gap-75">
+            <span class="w-75 h-75 rounded-full bg-sindoor inline-block"></span>
+            <span>VOL. IV · ISSUE 26 · RAIPUR EDITION</span>
+          </div>
+          <span class="text-zari">DIRECT SENIOR SYSTEMS ENGINEERING</span>
+          <span>12 HR SLA</span>
+        </div>
+        <div class="py-100 double-rule-y flex flex-col sm:flex-row items-center justify-between gap-100">
+          <span class="font-mono caption-3 text-sindoor">THE INDEPENDENT GAZETTE</span>
+          <span class="heading-5 tracking-tight">THE KOFFEE CHRONICLE</span>
+          <span class="font-mono caption-4 text-secondary">SIDDHARTH ROY · @TheGoodUser</span>
+        </div>
+        <div class="ikat-weave-strip h-100 mt-100 rounded-md" aria-hidden="true"></div>
+      </div>
+
+      <!-- Hero Grid: Left Minimal Copy + Right Visual Device Stage -->
+      <div id="devices" class="grid grid-cols-1 lg:grid-cols-12 gap-400 items-center">
+        
+        <!-- Left 5 Cols: High-Contrast Headline, Single CTA, Visual Proof Badges -->
+        <div class="lg:col-span-5 space-y-300">
+          <div class="inline-flex items-center gap-75 bg-surface border border-theme rounded-lg px-100 py-50 font-mono caption-3 text-zari">
+            <i class="ph ph-seal-check text-base text-sindoor" aria-hidden="true"></i>
+            <span>Q4 &amp; Q1 BUILD SLOTS OPEN</span>
+          </div>
+
+          <h1 class="heading-1 hero-gradient-text max-w-[680px]">
+            Ship production<br>
+            apps and cloud<br>
+            without bloat
+          </h1>
+
+          <p class="body-3 text-secondary max-w-[680px]">
+            Direct principal engineering for Flutter mobile, FastAPI backends, and AWS edge infrastructure.
+          </p>
+
+          <!-- Single Primary CTA Above the Fold (SKILL.md A4) -->
+          <div class="flex flex-wrap items-center gap-200">
+            <a href="#contact" class="btn-primary button-md rounded-xl inline-flex items-center gap-100">
+              <span>Book a 15 min call</span>
+              <i class="ph ph-arrow-right text-lg" aria-hidden="true"></i>
+            </a>
+            <span class="font-mono caption-4 text-muted">100% repo ownership</span>
+          </div>
+
+          <!-- Compact Visual Metric Tiles -->
+          <div class="grid grid-cols-3 gap-100 pt-100">
+            <div class="bg-surface border border-theme rounded-xl p-100">
+              <div class="heading-6 text-primary">10.4k+</div>
+              <div class="font-mono caption-5 text-zari">Active users</div>
+            </div>
+            <div class="bg-surface border border-theme rounded-xl p-100">
+              <div class="heading-6 text-primary">24.8k+</div>
+              <div class="font-mono caption-5 text-zari">Synced docs</div>
+            </div>
+            <div class="bg-surface border border-theme rounded-xl p-100">
+              <div class="heading-6 text-primary">210+</div>
+              <div class="font-mono caption-5 text-zari">HRMS seats</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 7 Cols: Interactive Device Screen Stage (01 Mobile, 02 Engine, 03 Edge) -->
+        <div class="lg:col-span-7 bg-surface border border-theme rounded-2xl p-200 sm:p-300 halftone-grid space-y-200">
           
-          <!-- STACK MATRIX -->
-          <div class="border-heavy bg-retro-white p-4 sm:p-6 space-y-4 overflow-hidden">
-            <h3 class="font-display text-lg sm:text-xl font-bold uppercase border-b-2 border-retro-black pb-2 flex justify-between items-center">
-              <span>CORE_TECH_STACK</span>
-              <i data-lucide="cpu" class="w-5 h-5 text-retro-red shrink-0"></i>
-            </h3>
+          <!-- Device Selector Switcher -->
+          <div class="flex flex-wrap items-center justify-between gap-100 bg-canvas border border-theme rounded-xl p-75">
+            <div role="tablist" aria-label="Interactive device screens" class="grid grid-cols-3 gap-75 flex-1">
+              <button type="button" role="tab" aria-selected="true" data-device="mobile" class="device-tab button-xsm font-mono py-75 px-100 rounded-lg bg-sindoor text-white inline-flex items-center justify-center gap-75 transition-colors duration-300">
+                <i class="ph ph-device-mobile text-base" aria-hidden="true"></i>
+                <span>01 Mobile</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-device="engine" class="device-tab button-xsm font-mono py-75 px-100 rounded-lg text-secondary hover:text-primary inline-flex items-center justify-center gap-75 transition-colors duration-300">
+                <i class="ph ph-terminal-window text-base" aria-hidden="true"></i>
+                <span>02 Engine</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-device="edge" class="device-tab button-xsm font-mono py-75 px-100 rounded-lg text-secondary hover:text-primary inline-flex items-center justify-center gap-75 transition-colors duration-300">
+                <i class="ph ph-globe-hemisphere-east text-base" aria-hidden="true"></i>
+                <span>03 Edge</span>
+              </button>
+            </div>
+          </div>
 
-            <div class="space-y-3 font-mono text-xs sm:text-sm">
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-2 border border-gray-300 bg-gray-50 gap-1">
-                <span class="font-bold">Mobile Engineering</span>
-                <span class="text-retro-red font-extrabold">Flutter / Dart / Provider / Riverpod</span>
+          <!-- DEVICE 01: FLUTTER ANDROID SMARTPHONE SCREEN -->
+          <div id="stage-mobile" class="device-stage flex justify-center py-100">
+            <div class="w-full max-w-sm bg-canvas border-2 border-theme rounded-3xl p-100 space-y-100">
+              <!-- Phone Status Bar & Notch -->
+              <div class="flex items-center justify-between px-100 pt-50 font-mono caption-5 text-secondary">
+                <span>9:41</span>
+                <span class="w-600 h-100 bg-elevated rounded-full inline-block"></span>
+                <span class="inline-flex items-center gap-50 text-zari">
+                  <i class="ph ph-wifi-high" aria-hidden="true"></i>
+                  <span>60 FPS</span>
+                </span>
               </div>
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-2 border border-gray-300 bg-gray-50 gap-1">
-                <span class="font-bold">Backend & APIs</span>
-                <span class="text-retro-red font-extrabold">FastAPI / Node.js / Express / Python</span>
-              </div>
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-2 border border-gray-300 bg-gray-50 gap-1">
-                <span class="font-bold">Databases & Local Storage</span>
-                <span class="text-retro-red font-extrabold">PostgreSQL / Supabase / Hive / Firebase</span>
-              </div>
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-2 border border-gray-300 bg-gray-50 gap-1">
-                <span class="font-bold">Web Frameworks</span>
-                <span class="text-retro-red font-extrabold">React / Next.js / TypeScript</span>
-              </div>
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-2 border border-gray-300 bg-gray-50 gap-1">
-                <span class="font-bold">DevOps & Cloud</span>
-                <span class="text-retro-red font-extrabold">AWS / Docker / Nginx / Vercel / Git</span>
+
+              <!-- App Header Inside Phone -->
+              <div class="bg-surface border border-theme rounded-2xl p-200 space-y-200">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-100">
+                    <span class="w-400 h-400 rounded-xl bg-sindoor/20 border border-sindoor flex items-center justify-center text-sindoor">
+                      <i class="ph ph-newspaper text-lg" aria-hidden="true"></i>
+                    </span>
+                    <div>
+                      <div class="title-4 text-primary">SamacharGrid</div>
+                      <div class="font-mono caption-5 text-zari">Offline Hive Sync · Active</div>
+                    </div>
+                  </div>
+                  <span class="bg-elevated border border-theme rounded-lg px-75 py-25 font-mono caption-5 text-primary">
+                    24,812 cached
+                  </span>
+                </div>
+
+                <!-- Interactive Mini Feed Cards Inside Phone UI -->
+                <div class="space-y-100">
+                  <div class="bg-elevated border border-theme rounded-xl p-100 flex items-center justify-between">
+                    <div class="flex items-center gap-100">
+                      <span class="w-300 h-300 rounded-lg bg-surface flex items-center justify-center text-zari">
+                        <i class="ph ph-lightning text-base" aria-hidden="true"></i>
+                      </span>
+                      <div>
+                        <div class="caption-3 text-primary">Zero-Lag Feed Engine</div>
+                        <div class="caption-5 text-secondary">Riverpod + GoRouter</div>
+                      </div>
+                    </div>
+                    <span class="font-mono caption-5 text-sindoor">28ms</span>
+                  </div>
+
+                  <div class="bg-elevated border border-theme rounded-xl p-100 flex items-center justify-between">
+                    <div class="flex items-center gap-100">
+                      <span class="w-300 h-300 rounded-lg bg-surface flex items-center justify-center text-zari">
+                        <i class="ph ph-shield-check text-base" aria-hidden="true"></i>
+                      </span>
+                      <div>
+                        <div class="caption-3 text-primary">Razorpay Verified</div>
+                        <div class="caption-5 text-secondary">Idempotent webhook lock</div>
+                      </div>
+                    </div>
+                    <span class="font-mono caption-5 text-zari">100%</span>
+                  </div>
+                </div>
+
+                <!-- Phone Bottom Nav Bar -->
+                <div class="grid grid-cols-4 gap-50 pt-75 border-t border-theme text-center text-secondary">
+                  <div class="text-sindoor flex flex-col items-center">
+                    <i class="ph ph-house text-base" aria-hidden="true"></i>
+                    <span class="caption-5">Feed</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <i class="ph ph-bookmarks text-base" aria-hidden="true"></i>
+                    <span class="caption-5">Hive</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <i class="ph ph-scan text-base" aria-hidden="true"></i>
+                    <span class="caption-5">ML Kit</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <i class="ph ph-user-circle text-base" aria-hidden="true"></i>
+                    <span class="caption-5">Profile</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- TERMINAL CONTROL SIMULATOR -->
-          <div class="border-heavy bg-retro-black text-retro-white p-4 sm:p-6 flex flex-col justify-between font-mono overflow-hidden">
-            <div>
-              <div class="flex items-center justify-between border-b border-retro-darkred pb-3 mb-4">
-                <span class="text-retro-red font-bold text-xs uppercase">// LIVE_SYSTEM_DIAGNOSTICS</span>
-                <span class="text-xs text-gray-400">ENGINEER: SIDDHARTH ROY</span>
+          <!-- DEVICE 02: FASTAPI + POSTGRESQL CONSOLE BROWSER SCREEN -->
+          <div id="stage-engine" class="device-stage hidden py-100">
+            <div class="w-full bg-canvas border-2 border-theme rounded-2xl overflow-hidden">
+              <!-- Browser Window Top Chrome -->
+              <div class="bg-surface border-b border-theme px-200 py-100 flex items-center justify-between">
+                <div class="flex items-center gap-75">
+                  <span class="w-100 h-100 rounded-full bg-sindoor inline-block"></span>
+                  <span class="w-100 h-100 rounded-full bg-elevated border border-theme inline-block"></span>
+                  <span class="w-100 h-100 rounded-full bg-elevated border border-theme inline-block"></span>
+                </div>
+                <div class="bg-elevated border border-theme rounded-md px-200 py-25 font-mono caption-5 text-secondary">
+                  api.koffee.space/v1/orders/verify
+                </div>
+                <span class="font-mono caption-5 text-zari">200 OK</span>
               </div>
-              <div class="space-y-2 text-xs text-retro-gray break-all">
-                <p><span class="text-retro-red">$</span> init koffee_space_system</p>
-                <p class="text-green-400">[SUCCESS] Production services initialized across full stack.</p>
-                <p><span class="text-retro-red">$</span> verify_production_metrics</p>
-                <p>[+] 10,000+ MAU SaaS News Platform: ACTIVE</p>
-                <p>[+] HRMS App (200+ Employee Enterprise): OPERATIONAL</p>
-                <p>[+] 100% Razorpay Transaction Integrity: VERIFIED</p>
-                <p>[+] 24k+ Article Hive Offline Sync CMS: READY</p>
+
+              <!-- Split API & Live Metrics UI -->
+              <div class="p-200 grid grid-cols-1 sm:grid-cols-12 gap-200">
+                <div class="sm:col-span-7 bg-surface border border-theme rounded-xl p-200 font-mono caption-4 space-y-75">
+                  <div class="flex items-center justify-between text-zari border-b border-theme pb-50">
+                    <span>POST /v1/webhooks/razorpay</span>
+                    <span>ASYNC</span>
+                  </div>
+                  <div class="text-secondary space-y-50">
+                    <div><span class="text-sindoor">@router.post</span>("/verify")</div>
+                    <div class="pl-200">sig = verify_hmac(payload, secret)</div>
+                    <div class="pl-200">row = await db.upsert_ledger(order_id)</div>
+                    <div class="pl-200 text-zari">return {"status": "settled", "ms": 19}</div>
+                  </div>
+                </div>
+
+                <div class="sm:col-span-5 flex flex-col justify-between gap-100">
+                  <div class="bg-surface border border-theme rounded-xl p-200">
+                    <div class="font-mono caption-5 text-secondary">P95 LATENCY</div>
+                    <div class="heading-5 text-zari">19.4 ms</div>
+                    <div class="mt-75 h-75 bg-elevated rounded-full overflow-hidden">
+                      <div class="w-4/5 h-full bg-sindoor"></div>
+                    </div>
+                  </div>
+
+                  <div class="bg-surface border border-theme rounded-xl p-200">
+                    <div class="font-mono caption-5 text-secondary">POSTGRES RLS</div>
+                    <div class="title-4 text-primary mt-25">14 Policies Active</div>
+                    <div class="font-mono caption-5 text-zari mt-25">Zero leaky tenants</div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="mt-6 pt-4 border-t border-retro-darkred flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-2">
-              <span class="text-retro-red font-bold uppercase">KOFFEE SPACE // REPO ACCESS</span>
-              <a href="https://github.com/TheGoodUser" target="_blank" class="text-retro-white underline hover:text-retro-red">GITHUB (@TheGoodUser) &rarr;</a>
+          <!-- DEVICE 03: AWS CLOUDFRONT + EDGE TOPOLOGY SCREEN -->
+          <div id="stage-edge" class="device-stage hidden py-100">
+            <div class="w-full bg-canvas border-2 border-theme rounded-2xl overflow-hidden">
+              <!-- Console Top Bar -->
+              <div class="bg-surface border-b border-theme px-200 py-100 flex items-center justify-between font-mono caption-5">
+                <span class="text-zari">AWS CLOUDFRONT · AP-SOUTH-1</span>
+                <span class="bg-sindoor text-white px-100 py-25 rounded-md">TLS 1.3 VERIFIED</span>
+              </div>
+
+              <!-- Visual Node Flow Diagram -->
+              <div class="p-200 space-y-200">
+                <div class="grid grid-cols-3 gap-100 items-center text-center">
+                  <div class="bg-surface border border-theme rounded-xl p-200 space-y-75">
+                    <i class="ph ph-globe text-2xl text-zari" aria-hidden="true"></i>
+                    <div class="title-5 text-primary">Custom FQDN</div>
+                    <div class="font-mono caption-5 text-secondary">Route53 + SSL</div>
+                  </div>
+
+                  <div class="bg-surface border border-zari rounded-xl p-200 space-y-75">
+                    <i class="ph ph-lightning text-2xl text-sindoor" aria-hidden="true"></i>
+                    <div class="title-5 text-primary">CloudFront Edge</div>
+                    <div class="font-mono caption-5 text-zari">98.4% Cache Hit</div>
+                  </div>
+
+                  <div class="bg-surface border border-theme rounded-xl p-200 space-y-75">
+                    <i class="ph ph-hard-drives text-2xl text-zari" aria-hidden="true"></i>
+                    <div class="title-5 text-primary">Docker + Nginx</div>
+                    <div class="font-mono caption-5 text-secondary">Zero-Downtime</div>
+                  </div>
+                </div>
+
+                <!-- Bar Chart Visual for Uptime & Bandwidth -->
+                <div class="bg-surface border border-theme rounded-xl p-200 flex items-end justify-between gap-75 h-600">
+                  <div class="w-full bg-elevated rounded-sm h-3/5"></div>
+                  <div class="w-full bg-elevated rounded-sm h-4/5"></div>
+                  <div class="w-full bg-sindoor rounded-sm h-full"></div>
+                  <div class="w-full bg-elevated rounded-sm h-3/4"></div>
+                  <div class="w-full bg-elevated rounded-sm h-5/6"></div>
+                  <div class="w-full bg-sindoor rounded-sm h-full"></div>
+                  <div class="w-full bg-elevated rounded-sm h-4/5"></div>
+                  <div class="w-full bg-sindoor rounded-sm h-full"></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -279,471 +863,1072 @@
       </div>
     </section>
 
-    <!-- SECTION 02: LIVE PROJECTS & DEPLOYMENTS -->
-    <section id="projects" class="p-4 sm:p-8 md:p-12 border-b-4 border-retro-black bg-retro-white min-w-0">
-      <div class="max-w-6xl mx-auto space-y-8 min-w-0">
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div class="flex items-center space-x-3 sm:space-x-4">
-            <span class="font-mono font-black text-xl sm:text-2xl text-retro-red whitespace-nowrap shrink-0">/02</span>
-            <h2 class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase break-words leading-tight">PROJECT DEPLOYMENTS</h2>
+    <!-- LIVE MOVING PRESS WIRE CAROUSEL (CSS Infinite Keyframes + Pause on Hover) -->
+    <div class="border-y border-theme bg-surface py-100 flex items-center gap-200 overflow-hidden" aria-label="Live stack capabilities ticker">
+      <div class="shrink-0 bg-sindoor text-white font-mono caption-3 px-200 py-50 ml-200 rounded-md inline-flex items-center gap-75">
+        <span class="w-75 h-75 rounded-full bg-white inline-block"></span>
+        <span>LIVE WIRE</span>
+      </div>
+      <div class="marquee-viewport">
+        <div class="marquee-track font-mono caption-3 text-primary items-center gap-400">
+          <span class="inline-flex items-center gap-75"><i class="ph ph-device-mobile text-zari" aria-hidden="true"></i> FLUTTER ANDROID</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cpu text-sindoor" aria-hidden="true"></i> FASTAPI ASYNC</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-database text-zari" aria-hidden="true"></i> SUPABASE &amp; POSTGRES</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-browsers text-sindoor" aria-hidden="true"></i> NEXT.JS APP ROUTER</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cloud text-zari" aria-hidden="true"></i> AWS CLOUDFRONT CDN</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-credit-card text-sindoor" aria-hidden="true"></i> RAZORPAY WEBHOOKS</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cube text-zari" aria-hidden="true"></i> DOCKER &amp; NGINX</span>
+          <span class="text-zari">◆</span>
+          <!-- Duplicate Track for Seamless Infinite Loop -->
+          <span class="inline-flex items-center gap-75"><i class="ph ph-device-mobile text-zari" aria-hidden="true"></i> FLUTTER ANDROID</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cpu text-sindoor" aria-hidden="true"></i> FASTAPI ASYNC</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-database text-zari" aria-hidden="true"></i> SUPABASE &amp; POSTGRES</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-browsers text-sindoor" aria-hidden="true"></i> NEXT.JS APP ROUTER</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cloud text-zari" aria-hidden="true"></i> AWS CLOUDFRONT CDN</span>
+          <span class="text-zari">◆</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-credit-card text-sindoor" aria-hidden="true"></i> RAZORPAY WEBHOOKS</span>
+          <span class="text-sindoor">❖</span>
+          <span class="inline-flex items-center gap-75"><i class="ph ph-cube text-zari" aria-hidden="true"></i> DOCKER &amp; NGINX</span>
+          <span class="text-zari">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MANDATORY TAGLINE REVEAL SECTION (SKILL.md B11) -->
+    <section id="tagline-section" class="py-800 px-200 sm:px-400 max-w-6xl mx-auto">
+      <div class="bg-surface border border-theme rounded-2xl p-400 sm:p-600 halftone-grid relative overflow-hidden">
+        <!-- Decorative Warli & Press Geometric Corner Registration Marks -->
+        <div class="flex items-center justify-between border-b border-theme pb-200 mb-300">
+          <div class="inline-flex items-center gap-75 font-mono caption-3 text-zari">
+            <i class="ph ph-flower-lotus text-base text-sindoor" aria-hidden="true"></i>
+            <span>DIRECT ENGINEERING · EDITION MANIFESTO</span>
           </div>
-          <a href="https://github.com/TheGoodUser" target="_blank" class="font-mono text-xs font-bold underline text-retro-black hover:text-retro-red shrink-0">
-            GITHUB REPOS (@TheGoodUser)
+          <div class="hidden sm:flex items-center gap-100 font-mono caption-5 text-secondary">
+            <span class="bg-elevated border border-theme px-75 py-25 rounded-md">0% MIDDLEMEN</span>
+            <span class="bg-elevated border border-theme px-75 py-25 rounded-md">100% SOURCE OWNERSHIP</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-300 items-center">
+          <div class="lg:col-span-9 max-w-[680px]">
+            <p id="taglineRevealText" class="heading-3">
+              No account managers, no handoff delays, and no fragile templates. You build directly with the systems architect who ships every screen and API.
+            </p>
+          </div>
+          <!-- Visual Press Seal Emblem -->
+          <div class="lg:col-span-3 flex lg:justify-end">
+            <div class="bg-elevated border border-theme rounded-2xl p-200 flex items-center gap-100">
+              <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3" class="text-zari"/>
+                <polygon points="32,10 48,32 32,54 16,32" stroke="currentColor" stroke-width="1.75" class="text-sindoor"/>
+                <circle cx="32" cy="32" r="5" fill="currentColor" class="text-zari"/>
+              </svg>
+              <div class="font-mono">
+                <div class="caption-3 text-primary">PASSED PRESS</div>
+                <div class="caption-5 text-secondary">VERIFIED BUILD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. VISUAL ENGAGEMENT TRACKS & WORKFLOW (UI-First, Low Text) -->
+    <section class="reveal-section py-600 px-200 sm:px-400 max-w-6xl mx-auto space-y-400">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-200 border-b border-theme pb-200">
+        <div>
+          <div class="font-mono caption-3 text-zari">01 · ENGAGEMENT TRACKS</div>
+          <h2 class="heading-2 text-primary mt-50">How we build together</h2>
+        </div>
+        <span class="font-mono caption-4 text-secondary">Click any card for technical specs</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-200">
+        
+        <button type="button" onclick="openModalKey('mvp')" class="card-tactile rounded-2xl p-200 text-left flex flex-col justify-between gap-300">
+          <div class="space-y-200">
+            <div class="flex items-center justify-between">
+              <span class="w-400 h-400 rounded-xl bg-elevated border border-theme flex items-center justify-center text-sindoor">
+                <i class="ph ph-rocket-launch text-xl" aria-hidden="true"></i>
+              </span>
+              <span class="font-mono caption-4 text-zari">10–18 DAYS</span>
+            </div>
+            <h3 class="title-2 text-primary">0 to 1 MVP Build</h3>
+            <!-- Visual Stack Pills -->
+            <div class="flex flex-wrap gap-50">
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Flutter</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">FastAPI</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Supabase</span>
+            </div>
+          </div>
+          <div class="pt-100 border-t border-theme flex items-center justify-between font-mono caption-4 text-zari">
+            <span>Inspect deliverables</span>
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </div>
+        </button>
+
+        <button type="button" onclick="openModalKey('debug')" class="card-tactile rounded-2xl p-200 text-left flex flex-col justify-between gap-300">
+          <div class="space-y-200">
+            <div class="flex items-center justify-between">
+              <span class="w-400 h-400 rounded-xl bg-elevated border border-theme flex items-center justify-center text-sindoor">
+                <i class="ph ph-wrench text-xl" aria-hidden="true"></i>
+              </span>
+              <span class="font-mono caption-4 text-zari">48 HR TRIAGE</span>
+            </div>
+            <h3 class="title-2 text-primary">Codebase Rescue</h3>
+            <div class="flex flex-wrap gap-50">
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">State Fix</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">SQL Index</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Webhooks</span>
+            </div>
+          </div>
+          <div class="pt-100 border-t border-theme flex items-center justify-between font-mono caption-4 text-zari">
+            <span>Inspect deliverables</span>
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </div>
+        </button>
+
+        <button type="button" onclick="openModalKey('cloud')" class="card-tactile rounded-2xl p-200 text-left flex flex-col justify-between gap-300">
+          <div class="space-y-200">
+            <div class="flex items-center justify-between">
+              <span class="w-400 h-400 rounded-xl bg-elevated border border-theme flex items-center justify-center text-sindoor">
+                <i class="ph ph-cloud-arrow-up text-xl" aria-hidden="true"></i>
+              </span>
+              <span class="font-mono caption-4 text-zari">2–5 DAYS</span>
+            </div>
+            <h3 class="title-2 text-primary">Cloud &amp; Edge Setup</h3>
+            <div class="flex flex-wrap gap-50">
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">CloudFront</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Docker</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">SSL/DNS</span>
+            </div>
+          </div>
+          <div class="pt-100 border-t border-theme flex items-center justify-between font-mono caption-4 text-zari">
+            <span>Inspect deliverables</span>
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </div>
+        </button>
+
+        <button type="button" onclick="openModalKey('advisory')" class="card-tactile rounded-2xl p-200 text-left flex flex-col justify-between gap-300">
+          <div class="space-y-200">
+            <div class="flex items-center justify-between">
+              <span class="w-400 h-400 rounded-xl bg-elevated border border-theme flex items-center justify-center text-sindoor">
+                <i class="ph ph-compass text-xl" aria-hidden="true"></i>
+              </span>
+              <span class="font-mono caption-4 text-zari">1 ON 1 AUDIT</span>
+            </div>
+            <h3 class="title-2 text-primary">Technical Advisory</h3>
+            <div class="flex flex-wrap gap-50">
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Schema</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Security</span>
+              <span class="font-mono caption-5 bg-elevated border border-theme px-75 py-25 rounded-md text-secondary">Roadmap</span>
+            </div>
+          </div>
+          <div class="pt-100 border-t border-theme flex items-center justify-between font-mono caption-4 text-zari">
+            <span>Inspect deliverables</span>
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- Compact 3-Step Visual Pipeline -->
+      <div class="bg-surface border border-theme rounded-2xl p-200 grid grid-cols-1 md:grid-cols-3 gap-200">
+        <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center gap-200">
+          <span class="w-500 h-500 rounded-xl bg-surface border border-theme flex items-center justify-center font-mono title-4 text-sindoor shrink-0">01</span>
+          <div>
+            <div class="title-4 text-primary">Lock Schema &amp; Milestones</div>
+            <div class="caption-4 text-secondary">Fixed scope within 12 hours</div>
+          </div>
+        </div>
+        <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center gap-200">
+          <span class="w-500 h-500 rounded-xl bg-surface border border-theme flex items-center justify-center font-mono title-4 text-zari shrink-0">02</span>
+          <div>
+            <div class="title-4 text-primary">72-Hour Staging Drops</div>
+            <div class="caption-4 text-secondary">Signed APKs &amp; live endpoints</div>
+          </div>
+        </div>
+        <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center gap-200">
+          <span class="w-500 h-500 rounded-xl bg-surface border border-theme flex items-center justify-center font-mono title-4 text-sindoor shrink-0">03</span>
+          <div>
+            <div class="title-4 text-primary">Full Repo Handover</div>
+            <div class="caption-4 text-secondary">30-day stability warranty</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VISUAL CASE STUDY ARCHIVE WITH UI MINI-PREVIEWS -->
+    <section id="work" class="reveal-section py-600 px-200 sm:px-400 max-w-6xl mx-auto space-y-400">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-200 border-b border-theme pb-200">
+        <div>
+          <div class="font-mono caption-3 text-zari">02 · SHIPPED SYSTEMS</div>
+          <h2 class="heading-2 text-primary mt-50">Production archive</h2>
+        </div>
+
+        <div role="tablist" aria-label="Filter projects" class="inline-flex bg-surface border border-theme rounded-xl p-50 gap-50">
+          <button type="button" data-filter="all" class="filter-btn button-xsm font-mono px-100 py-75 rounded-lg bg-sindoor text-white">All (4)</button>
+          <button type="button" data-filter="mobile" class="filter-btn button-xsm font-mono px-100 py-75 rounded-lg text-secondary hover:text-primary">Flutter</button>
+          <button type="button" data-filter="cloud" class="filter-btn button-xsm font-mono px-100 py-75 rounded-lg text-secondary hover:text-primary">SaaS &amp; Cloud</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-300">
+        
+        <!-- Project 1 with Visual Architecture Strip -->
+        <article data-category="mobile cloud" class="project-card card-tactile rounded-2xl p-200 sm:p-300 flex flex-col justify-between gap-200">
+          <div class="space-y-200">
+            <!-- Visual Preview Banner -->
+            <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center justify-between">
+              <div class="flex items-center gap-100">
+                <span class="w-400 h-400 rounded-lg bg-sindoor/20 border border-sindoor flex items-center justify-center text-sindoor">
+                  <i class="ph ph-newspaper-clipping text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="font-mono caption-3 text-zari">10,400+ MAU</div>
+                  <div class="caption-5 text-secondary">+25.4% session duration</div>
+                </div>
+              </div>
+              <span class="press-stamp font-mono caption-5 text-sindoor px-75 py-25 rounded-md">LIVE SAAS</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-100">
+              <h3 class="heading-6 text-primary">Multi-Modal News Engine</h3>
+              <button type="button" onclick="openModalKey('news')" class="btn-secondary button-xsm font-mono rounded-lg inline-flex items-center gap-50 shrink-0">
+                <span>Specs</span>
+                <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-100 border-t border-theme flex flex-wrap gap-75 font-mono caption-5 text-secondary">
+            <span class="bg-elevated px-75 py-25 rounded-md">Flutter</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Next.js</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Supabase</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article data-category="mobile" class="project-card card-tactile rounded-2xl p-200 sm:p-300 flex flex-col justify-between gap-200">
+          <div class="space-y-200">
+            <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center justify-between">
+              <div class="flex items-center gap-100">
+                <span class="w-400 h-400 rounded-lg bg-surface border border-zari flex items-center justify-center text-zari">
+                  <i class="ph ph-users-three text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="font-mono caption-3 text-zari">PLAY STORE BETA</div>
+                  <div class="caption-5 text-secondary">Zero payment leakage</div>
+                </div>
+              </div>
+              <span class="border border-theme font-mono caption-5 text-primary px-75 py-25 rounded-md">VERIFIED</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-100">
+              <h3 class="heading-6 text-primary">Social Discovery Platform</h3>
+              <button type="button" onclick="openModalKey('social')" class="btn-secondary button-xsm font-mono rounded-lg inline-flex items-center gap-50 shrink-0">
+                <span>Specs</span>
+                <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-100 border-t border-theme flex flex-wrap gap-75 font-mono caption-5 text-secondary">
+            <span class="bg-elevated px-75 py-25 rounded-md">Flutter</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Razorpay</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">ML Kit</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article data-category="mobile cloud" class="project-card card-tactile rounded-2xl p-200 sm:p-300 flex flex-col justify-between gap-200">
+          <div class="space-y-200">
+            <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center justify-between">
+              <div class="flex items-center gap-100">
+                <span class="w-400 h-400 rounded-lg bg-surface border border-zari flex items-center justify-center text-zari">
+                  <i class="ph ph-database text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="font-mono caption-3 text-zari">24,800+ ARTICLES</div>
+                  <div class="caption-5 text-secondary">100% offline availability</div>
+                </div>
+              </div>
+              <span class="border border-theme font-mono caption-5 text-primary px-75 py-25 rounded-md">HIVE SYNC</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-100">
+              <h3 class="heading-6 text-primary">Offline-First Editorial CMS</h3>
+              <button type="button" onclick="openModalKey('cms')" class="btn-secondary button-xsm font-mono rounded-lg inline-flex items-center gap-50 shrink-0">
+                <span>Specs</span>
+                <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-100 border-t border-theme flex flex-wrap gap-75 font-mono caption-5 text-secondary">
+            <span class="bg-elevated px-75 py-25 rounded-md">Dart</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Hive Box</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Quill Editor</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article data-category="mobile" class="project-card card-tactile rounded-2xl p-200 sm:p-300 flex flex-col justify-between gap-200">
+          <div class="space-y-200">
+            <div class="bg-elevated border border-theme rounded-xl p-200 flex items-center justify-between">
+              <div class="flex items-center gap-100">
+                <span class="w-400 h-400 rounded-lg bg-sindoor/20 border border-sindoor flex items-center justify-center text-sindoor">
+                  <i class="ph ph-buildings text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="font-mono caption-3 text-zari">210+ SEATS</div>
+                  <div class="caption-5 text-secondary">-31% admin overhead</div>
+                </div>
+              </div>
+              <span class="press-stamp font-mono caption-5 text-sindoor px-75 py-25 rounded-md">ENTERPRISE</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-100">
+              <h3 class="heading-6 text-primary">Geo-Fenced Workforce HRMS</h3>
+              <button type="button" onclick="openModalKey('hrms')" class="btn-secondary button-xsm font-mono rounded-lg inline-flex items-center gap-50 shrink-0">
+                <span>Specs</span>
+                <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-100 border-t border-theme flex flex-wrap gap-75 font-mono caption-5 text-secondary">
+            <span class="bg-elevated px-75 py-25 rounded-md">Flutter</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Python</span>
+            <span class="bg-elevated px-75 py-25 rounded-md">Firebase</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Compact Client Proof Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-200">
+        <div class="bg-surface border border-theme rounded-2xl p-200 sm:p-300 space-y-100">
+          <div class="flex items-center justify-between">
+            <span class="title-4 text-primary">Rohan Deshmukh · SamacharGrid Media</span>
+            <i class="ph ph-quotes text-xl text-zari" aria-hidden="true"></i>
+          </div>
+          <p class="body-6 text-secondary">
+            "Siddharth took our publishing platform from wireframes to 10,400 monthly readers without a single outage."
+          </p>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl p-200 sm:p-300 space-y-100">
+          <div class="flex items-center justify-between">
+            <span class="title-4 text-primary">Ananya Kulkarni · Vidarbha Logistics</span>
+            <i class="ph ph-quotes text-xl text-zari" aria-hidden="true"></i>
+          </div>
+          <p class="body-6 text-secondary">
+            "Our field attendance ran on spreadsheets before Koffee Space shipped our Flutter HRMS app in days."
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 5. INTERACTIVE SCOPE & BENCHMARK COMPARATOR -->
+    <section id="estimator" class="reveal-section py-600 px-200 sm:px-400 max-w-6xl mx-auto space-y-400">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-200 border-b border-theme pb-200">
+        <div>
+          <div class="font-mono caption-3 text-zari">03 · SCOPE COMPARATOR</div>
+          <h2 class="heading-2 text-primary mt-50">Timeline &amp; cost estimator</h2>
+        </div>
+        <div id="geoStatus" class="font-mono caption-4 bg-surface border border-theme rounded-lg px-200 py-75 text-zari">
+          Currency: USD ($)
+        </div>
+      </div>
+
+      <div class="bg-surface border border-theme rounded-2xl p-200 sm:p-300 space-y-300">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-200">
+          <div class="md:col-span-2 space-y-75">
+            <label for="archSelect" class="title-5 font-mono text-secondary block">CORE ARCHITECTURE</label>
+            <select id="archSelect" onchange="updateEstimate()" class="w-full bg-elevated border border-theme rounded-xl p-100 text-primary body-5 font-mono">
+              <option value="flutter">Flutter Android App (Riverpod + Offline Sync)</option>
+              <option value="fastapi">FastAPI Async Microservice + PostgreSQL</option>
+              <option value="supabase">Next.js Web App + Supabase Edge</option>
+              <option value="aws">AWS CloudFront CDN + Custom SSL</option>
+              <option value="fullstack">Full Stack Mobile + FastAPI + Cloud</option>
+            </select>
+          </div>
+
+          <div class="space-y-75">
+            <label for="currSelect" class="title-5 font-mono text-secondary block">CURRENCY</label>
+            <select id="currSelect" onchange="activeCurrency = this.value; updateEstimate();" class="w-full bg-elevated border border-theme rounded-xl p-100 text-primary body-5 font-mono">
+              <option value="USD">USD ($)</option>
+              <option value="INR">INR (₹)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-100">
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" checked onchange="updateEstimate()">
+            <span class="body-5 text-primary">Razorpay Webhooks</span>
+          </label>
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" checked onchange="updateEstimate()">
+            <span class="body-5 text-primary">Offline Hive Cache</span>
+          </label>
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" onchange="updateEstimate()">
+            <span class="body-5 text-primary">CloudFront + SSL</span>
+          </label>
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" onchange="updateEstimate()">
+            <span class="body-5 text-primary">Docker + Nginx</span>
+          </label>
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" onchange="updateEstimate()">
+            <span class="body-5 text-primary">ML Kit Vision</span>
+          </label>
+          <label class="bg-elevated border border-theme rounded-xl p-100 flex items-center gap-100 cursor-pointer hover:border-zari transition-colors">
+            <input type="checkbox" class="mod-check accent-sindoor w-200 h-200" onchange="updateEstimate()">
+            <span class="body-5 text-primary">Admin Dashboard</span>
+          </label>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-200">
+          <div class="bg-elevated border border-zari rounded-2xl p-200 sm:p-300 space-y-200">
+            <div class="flex items-center justify-between">
+              <span class="font-mono caption-3 text-zari">KOFFEE SPACE · DIRECT</span>
+              <span class="font-mono caption-5 bg-sindoor text-white px-75 py-25 rounded-md">3X FASTER</span>
+            </div>
+            <div class="grid grid-cols-2 gap-100">
+              <div class="bg-surface border border-theme rounded-xl p-200">
+                <span class="font-mono caption-5 text-secondary block">TIMELINE</span>
+                <span id="studioDays" class="heading-5 text-zari mt-25 block">7 to 11 days</span>
+              </div>
+              <div class="bg-surface border border-theme rounded-xl p-200">
+                <span class="font-mono caption-5 text-secondary block">ESTIMATE</span>
+                <span id="studioCost" class="heading-5 text-primary mt-25 block">$710 to $1,100</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-elevated border border-theme rounded-2xl p-200 sm:p-300 space-y-200 opacity-80">
+            <div class="flex items-center justify-between">
+              <span class="font-mono caption-3 text-secondary">TRADITIONAL AGENCY</span>
+              <span class="font-mono caption-5 bg-panel text-secondary px-75 py-25 rounded-md">BENCHMARK</span>
+            </div>
+            <div class="grid grid-cols-2 gap-100">
+              <div class="bg-surface border border-theme rounded-xl p-200">
+                <span class="font-mono caption-5 text-muted block">TIMELINE</span>
+                <span id="agencyDays" class="heading-5 text-secondary mt-25 block">22 to 37 days</span>
+              </div>
+              <div class="bg-surface border border-theme rounded-xl p-200">
+                <span class="font-mono caption-5 text-muted block">ESTIMATE</span>
+                <span id="agencyCost" class="heading-5 text-secondary mt-25 block">$2,700 to $4,730</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. COMPACT ACCORDION FAQ (SKILL.md A2 & A7: 6 Questions) -->
+    <section id="faq" class="reveal-section py-600 px-200 sm:px-400 max-w-6xl mx-auto space-y-300">
+      <div class="border-b border-theme pb-200">
+        <div class="font-mono caption-3 text-zari">04 · QUESTIONS</div>
+        <h2 class="heading-2 text-primary mt-50">Frequently asked</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-200" id="faqAccordion">
+        
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="true" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">Who writes the production code?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 rotate-180 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel px-200 pb-200 body-6 text-secondary">
+            Siddharth Roy personally architects, writes, and deploys every line of code. Zero outsourcing.
+          </div>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="false" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">Do we own the GitHub repo and cloud accounts?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel hidden px-200 pb-200 body-6 text-secondary">
+            Yes. Code is pushed directly to your GitHub organization and deployed on your AWS or Supabase accounts from day one.
+          </div>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="false" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">Can you rescue an existing Flutter or FastAPI app?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel hidden px-200 pb-200 body-6 text-secondary">
+            Yes. We run a 48 hour diagnostic audit to fix state leaks, SQL bottlenecks, and webhook errors.
+          </div>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="false" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">How are milestones structured?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel hidden px-200 pb-200 body-6 text-secondary">
+            Work is split into testable 72 hour checkpoints with signed APKs and live staging links before each payment tranche.
+          </div>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="false" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">Is post-launch support included?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel hidden px-200 pb-200 body-6 text-secondary">
+            Every build includes a 30 day post-launch stability warranty covering bug fixes and deployment monitoring.
+          </div>
+        </div>
+
+        <div class="bg-surface border border-theme rounded-2xl overflow-hidden">
+          <button type="button" aria-expanded="false" class="faq-trigger w-full p-200 flex items-center justify-between gap-200 text-left">
+            <span class="title-3 text-primary">Which time zones do you support?</span>
+            <i class="ph ph-caret-down text-lg text-zari transition-transform duration-300 shrink-0" aria-hidden="true"></i>
+          </button>
+          <div class="faq-panel hidden px-200 pb-200 body-6 text-secondary">
+            Based in IST (UTC +05:30) with daily overlap windows for US, UK, EU, and APAC teams, plus async Loom updates.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. DIRECT CONSULTATION & BRIEF DISPATCH (SKILL.md A2 & B9) -->
+    <section id="contact" class="reveal-section py-600 px-200 sm:px-400 max-w-6xl mx-auto">
+      <div class="bg-surface border border-theme rounded-2xl p-300 sm:p-400 grid grid-cols-1 lg:grid-cols-12 gap-400">
+        
+        <!-- Left 5 Cols: Direct Contact Channels -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-300">
+          <div class="space-y-200">
+            <div class="font-mono caption-3 text-zari">05 · DIRECT DISPATCH</div>
+            <h2 class="heading-2 text-primary">Start a build</h2>
+            <p class="body-5 text-secondary">
+              Send your scope or bottleneck. You will receive an architecture note and fixed milestone breakdown within 12 hours.
+            </p>
+          </div>
+
+          <div class="space-y-100">
+            <a href="mailto:hello@koffee.space" class="bg-elevated border border-theme hover:border-zari rounded-xl p-200 flex items-center justify-between transition-colors">
+              <div class="flex items-center gap-100">
+                <i class="ph ph-envelope-simple text-xl text-sindoor" aria-hidden="true"></i>
+                <div>
+                  <div class="font-mono caption-5 text-secondary">DIRECT EMAIL</div>
+                  <div class="title-4 text-primary">hello@koffee.space</div>
+                </div>
+              </div>
+              <i class="ph ph-arrow-up-right text-zari" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/TheGoodUser" target="_blank" rel="noopener noreferrer" class="bg-elevated border border-theme hover:border-zari rounded-xl p-200 flex items-center justify-between transition-colors">
+              <div class="flex items-center gap-100">
+                <i class="ph ph-github-logo text-xl text-zari" aria-hidden="true"></i>
+                <div>
+                  <div class="font-mono caption-5 text-secondary">SOURCE REPOSITORIES</div>
+                  <div class="title-4 text-primary">github.com/TheGoodUser</div>
+                </div>
+              </div>
+              <i class="ph ph-arrow-up-right text-zari" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right 7 Cols: Client-Side Validated Consultation Form -->
+        <div class="lg:col-span-7 bg-elevated border border-theme rounded-2xl p-200 sm:p-300">
+          <form id="consultForm" novalidate class="space-y-200">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-200">
+              <div class="space-y-75">
+                <label for="clientName" class="title-5 font-mono text-secondary block">YOUR NAME</label>
+                <input id="clientName" name="clientName" type="text" required placeholder="Aarav Mehta" class="w-full bg-surface border border-theme rounded-xl p-100 text-primary body-5">
+                <p id="nameError" class="hidden font-mono caption-5 text-sindoor">Please enter at least 2 characters.</p>
+              </div>
+
+              <div class="space-y-75">
+                <label for="clientEmail" class="title-5 font-mono text-secondary block">WORK EMAIL</label>
+                <input id="clientEmail" name="clientEmail" type="email" required placeholder="aarav@company.com" class="w-full bg-surface border border-theme rounded-xl p-100 text-primary body-5">
+                <p id="emailError" class="hidden font-mono caption-5 text-sindoor">Please enter a valid email address.</p>
+              </div>
+            </div>
+
+            <div class="space-y-75">
+              <label for="projectBrief" class="title-5 font-mono text-secondary block">PROJECT BRIEF OR BOTTLENECK</label>
+              <textarea id="projectBrief" name="projectBrief" rows="4" required placeholder="Flutter Android MVP with Razorpay webhooks and FastAPI backend..." class="w-full bg-surface border border-theme rounded-xl p-100 text-primary body-5"></textarea>
+              <p id="briefError" class="hidden font-mono caption-5 text-sindoor">Please share at least 15 characters about your project.</p>
+            </div>
+
+            <div id="formFeedback" role="status" aria-live="polite" class="hidden bg-surface border rounded-xl p-100 font-mono caption-4 text-primary"></div>
+
+            <div class="flex flex-wrap items-center justify-between gap-200 pt-50">
+              <span class="font-mono caption-5 text-secondary">NDA ready · Reply within 12 hrs</span>
+              <button type="submit" class="btn-primary button-md rounded-xl inline-flex items-center gap-100">
+                <span>Send project brief</span>
+                <i class="ph ph-paper-plane-tilt text-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (SKILL.md B10 + Rich Visual Broadsheet Colophon) -->
+  <footer class="border-t border-theme bg-surface mt-600">
+    <div class="ikat-weave-strip h-100" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-200 sm:px-400 py-400 space-y-300">
+      
+      <!-- Top Broadsheet Colophon Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-200 pb-300 border-b border-theme">
+        
+        <!-- Brand & Geometric Lotus Press Seal -->
+        <div class="md:col-span-5 bg-elevated border border-theme rounded-2xl p-200 flex items-start gap-200">
+          <div class="w-600 h-600 rounded-xl bg-surface border border-zari flex items-center justify-center shrink-0">
+            <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" class="text-zari"/>
+              <polygon points="32,12 46,32 32,52 18,32" stroke="currentColor" stroke-width="2" class="text-sindoor"/>
+              <circle cx="32" cy="32" r="5" fill="currentColor" class="text-zari"/>
+            </svg>
+          </div>
+          <div class="space-y-75">
+            <div class="flex items-center gap-75">
+              <span class="title-4 font-mono text-primary">koffee.space</span>
+              <span class="press-stamp font-mono caption-5 text-sindoor px-75 py-25 rounded-md">EST. 2024</span>
+            </div>
+            <p class="caption-4 text-secondary">
+              Independent systems architecture &amp; full stack product studio printed in Raipur, India.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual Stack & Telemetry Badges -->
+        <div class="md:col-span-4 bg-elevated border border-theme rounded-2xl p-200 space-y-100">
+          <div class="flex items-center justify-between font-mono caption-5 text-zari">
+            <span>PRODUCTION STACK</span>
+            <span class="inline-flex items-center gap-50">
+              <span class="w-75 h-75 rounded-full bg-sindoor inline-block"></span>
+              <span>ALL SYSTEMS NOMINAL</span>
+            </span>
+          </div>
+          <div class="flex flex-wrap gap-75 font-mono caption-5 text-primary">
+            <span class="bg-surface border border-theme px-75 py-50 rounded-lg inline-flex items-center gap-50">
+              <i class="ph ph-device-mobile text-sindoor" aria-hidden="true"></i> Flutter
+            </span>
+            <span class="bg-surface border border-theme px-75 py-50 rounded-lg inline-flex items-center gap-50">
+              <i class="ph ph-cpu text-zari" aria-hidden="true"></i> FastAPI
+            </span>
+            <span class="bg-surface border border-theme px-75 py-50 rounded-lg inline-flex items-center gap-50">
+              <i class="ph ph-database text-sindoor" aria-hidden="true"></i> Supabase
+            </span>
+            <span class="bg-surface border border-theme px-75 py-50 rounded-lg inline-flex items-center gap-50">
+              <i class="ph ph-cloud text-zari" aria-hidden="true"></i> AWS Edge
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Dispatch & Coordinates Box -->
+        <div class="md:col-span-3 bg-elevated border border-theme rounded-2xl p-200 flex flex-col justify-between font-mono">
+          <div class="space-y-50">
+            <div class="caption-5 text-zari">COORDINATES</div>
+            <div class="caption-3 text-primary">21.2514° N, 81.6296° E</div>
+            <div class="caption-5 text-secondary">IST (UTC +05:30)</div>
+          </div>
+          <a href="#contact" class="mt-100 btn-secondary button-xsm rounded-lg inline-flex items-center justify-between">
+            <span>Start a project</span>
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
           </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-w-0">
-          
-          <!-- RESUME PROJECT 1 -->
-          <div class="awwwards-card border-heavy p-5 sm:p-6 bg-retro-paper flex flex-col justify-between overflow-hidden">
-            <div>
-              <div class="flex flex-wrap items-center justify-between font-mono text-xs font-bold mb-3 gap-2">
-                <span class="bg-retro-red text-retro-white px-2 py-0.5">10,000+ MAU SAAS</span>
-                <span class="text-retro-black">FLUTTER + NEXT.JS</span>
-              </div>
-              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-2 leading-tight break-words">SaaS News Publishing Platform</h3>
-              <p class="font-mono text-xs text-gray-700 mb-4 leading-relaxed">
-                Multi-modal news platform serving 10k+ monthly active users. Built Flutter mobile UI, Supabase serverless backend, and Next.js web frontend end to end with 25% higher session duration through skeleton loaders and accessibility.
-              </p>
-            </div>
-            <div class="border-t-2 border-retro-black pt-4 flex flex-col sm:flex-row sm:items-center justify-between font-mono text-xs font-bold gap-2">
-              <span class="truncate">STACK: FLUTTER / SUPABASE / NEXT.JS</span>
-              <span class="text-retro-red shrink-0">LIVE IN PRODUCTION</span>
-            </div>
-          </div>
+      </div>
 
-          <!-- RESUME PROJECT 2 -->
-          <div class="awwwards-card border-heavy p-5 sm:p-6 bg-retro-paper flex flex-col justify-between overflow-hidden">
-            <div>
-              <div class="flex flex-wrap items-center justify-between font-mono text-xs font-bold mb-3 gap-2">
-                <span class="bg-retro-black text-retro-white px-2 py-0.5">PLAY STORE BETA</span>
-                <span class="text-retro-black">FLUTTER + ML KIT</span>
-              </div>
-              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-2 leading-tight break-words">Secure Social Discovery Platform</h3>
-              <p class="font-mono text-xs text-gray-700 mb-4 leading-relaxed">
-                Production-ready Flutter social application delivered to Play Store Beta. Engineered Provider state management, GoRouter navigation, zero unauthorized access via Supabase auth, and Razorpay server-side payment hooks.
-              </p>
-            </div>
-            <div class="border-t-2 border-retro-black pt-4 flex flex-col sm:flex-row sm:items-center justify-between font-mono text-xs font-bold gap-2">
-              <span class="truncate">STACK: FLUTTER / RAZORPAY / ML KIT</span>
-              <span class="text-retro-red shrink-0">PLAY STORE BETA</span>
-            </div>
-          </div>
-
-          <!-- RESUME PROJECT 3 -->
-          <div class="awwwards-card border-heavy p-5 sm:p-6 bg-retro-paper flex flex-col justify-between overflow-hidden">
-            <div>
-              <div class="flex flex-wrap items-center justify-between font-mono text-xs font-bold mb-3 gap-2">
-                <span class="bg-retro-black text-retro-white px-2 py-0.5">OFFLINE-FIRST CMS</span>
-                <span class="text-retro-black">24K+ ARTICLES</span>
-              </div>
-              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-2 leading-tight break-words">Modular Content Management Suite</h3>
-              <p class="font-mono text-xs text-gray-700 mb-4 leading-relaxed">
-                Content management system handling 24,000+ articles. Built with offline-first Hive box storage for 100% content availability in low-network zones and integrated Flutter Quill editor for real-time previews.
-              </p>
-            </div>
-            <div class="border-t-2 border-retro-black pt-4 flex flex-col sm:flex-row sm:items-center justify-between font-mono text-xs font-bold gap-2">
-              <span class="truncate">STACK: DART / HIVE / SUPABASE / QUILL</span>
-              <span class="text-retro-red shrink-0">PRIVATE ARCHITECTURE</span>
-            </div>
-          </div>
-
-          <!-- RESUME PROJECT 4 -->
-          <div class="awwwards-card border-heavy p-5 sm:p-6 bg-retro-paper flex flex-col justify-between overflow-hidden">
-            <div>
-              <div class="flex flex-wrap items-center justify-between font-mono text-xs font-bold mb-3 gap-2">
-                <span class="bg-retro-red text-retro-white px-2 py-0.5">ENTERPRISE HRMS</span>
-                <span class="text-retro-black">200+ EMPLOYEES</span>
-              </div>
-              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-2 leading-tight break-words">Employee Management Suite</h3>
-              <p class="font-mono text-xs text-gray-700 mb-4 leading-relaxed">
-                Flutter HRMS app deployed for 200+ employee company. Reduced admin workload by 30% via task workflows, push notifications, selfie/geo-tagged attendance, and secure Python backend authentication.
-              </p>
-            </div>
-            <div class="border-t-2 border-retro-black pt-4 flex flex-col sm:flex-row sm:items-center justify-between font-mono text-xs font-bold gap-2">
-              <span class="truncate">STACK: FLUTTER / PYTHON / FIREBASE</span>
-              <span class="text-retro-red shrink-0">ENTERPRISE ADOPTION</span>
-            </div>
-          </div>
-
+      <!-- Bottom Legal, Navigation & Registration Strip -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-200">
+        <div class="flex items-center gap-100 font-mono caption-4 text-secondary">
+          <i class="ph ph-flower-lotus text-lg text-zari" aria-hidden="true"></i>
+          <span>© 2026 Siddharth Roy · Printed &amp; engineered with zero bloat</span>
         </div>
 
-      </div>
-    </section>
-
-    <!-- SECTION 03: INTERACTIVE PROJECT QUOTATOR -->
-    <section id="estimator" class="p-4 sm:p-8 md:p-12 border-b-4 border-retro-black bg-retro-paper min-w-0">
-      <div class="max-w-5xl mx-auto space-y-8 min-w-0">
-        
-        <div class="flex items-center space-x-3 sm:space-x-4">
-          <span class="font-mono font-black text-xl sm:text-2xl text-retro-red whitespace-nowrap shrink-0">/03</span>
-          <h2 class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase break-words leading-tight">PROJECT SCOPE & BENCHMARK COMPARATOR</h2>
-        </div>
-
-        <div class="border-heavy bg-retro-white p-4 sm:p-8 space-y-6 overflow-hidden">
-          <p class="font-mono text-xs sm:text-sm text-retro-black font-bold uppercase leading-relaxed">
-            // SELECT PROJECT PARAMETERS TO ESTIMATE DEVELOPMENT TIMELINE, INVESTMENT, AND COMPARE AGAINST TRADITIONAL BIG AGENCY OVERHEAD:
-          </p>
-
-          <form id="quoteForm" onsubmit="event.preventDefault(); calculateScope();" class="space-y-6">
-            
-            <!-- SCOPE SELECT -->
-            <div>
-              <label class="block font-mono text-xs font-black uppercase mb-2">1. PRIMARY SYSTEM ARCHITECTURE</label>
-              <select id="sysType" onchange="calculateScope()" class="w-full border-heavy p-3 font-mono text-xs sm:text-sm bg-retro-paper focus:outline-none focus:border-retro-red font-bold">
-                <option value="flutter">Flutter Android App (Provider / Riverpod / GoRouter Architecture)</option>
-                <option value="fastapi">FastAPI Microservice Backend + PostgreSQL Database Design</option>
-                <option value="supabase">Next.js + Supabase Edge Functions + Web Application</option>
-                <option value="aws">AWS CloudFront CDN + Custom FQDN + SSL + Hostinger DNS</option>
-                <option value="fullstack">Full-Stack Mobile + Async FastAPI Backend + Cloud CI/CD Pipeline</option>
-              </select>
-            </div>
-
-            <!-- CURRENCY DETECTOR OVERRIDE BAR -->
-            <div class="flex items-center justify-between bg-retro-paper border border-retro-black p-2 font-mono text-xs font-bold">
-              <span class="flex items-center space-x-2">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span id="detectedCountry">DETECTING LOCATION & CURRENCY...</span>
-              </span>
-              <select id="currencySelector" onchange="userSelectedCurrency = this.value; calculateScope();" class="border border-retro-black px-2 py-1 text-xs bg-retro-white focus:outline-none focus:border-retro-red">
-                <option value="USD">USD ($)</option>
-                <option value="INR">INR (₹)</option>
-                <option value="EUR">EUR (€)</option>
-                <option value="GBP">GBP (£)</option>
-                <option value="CAD">CAD (C$)</option>
-                <option value="AUD">AUD (A$)</option>
-              </select>
-            </div>
-
-            <!-- EXPANDED ADDONS CHECKBOXES -->
-            <div>
-              <label class="block font-mono text-xs font-black uppercase mb-2">2. INTEGRATIONS & FEATURE MODULES</label>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 font-mono text-xs font-bold">
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addSsl" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0" checked>
-                  <span class="leading-tight">Razorpay Server Hooks & Order Verification</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addPlaystore" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0" checked>
-                  <span class="leading-tight">Offline Hive Storage Sync Layer</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addCiCd" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0" checked>
-                  <span class="leading-tight">AWS CloudFront CDN + Custom FQDN SSL</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addDocs" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">Docker Containerization & Nginx Proxy</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addRealtime" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">LiveKit / WebSockets Real-Time Audio/Data</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addMl" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">Google ML Kit / On-Device AI Models</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addGeo" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">Geo-Fence & Biometric Verification</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addPush" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">Push Notifications & Local Scheduling</span>
-                </label>
-                <label class="flex items-start space-x-2 border border-retro-black p-3 bg-retro-paper cursor-pointer hover:bg-retro-gray">
-                  <input type="checkbox" id="addAdmin" onchange="calculateScope()" class="w-4 h-4 accent-retro-red mt-0.5 shrink-0">
-                  <span class="leading-tight">Role-Based Enterprise Admin Dashboard</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- COMPARISON BENCHMARK OUTPUT -->
-            <div class="border-heavy bg-retro-black text-retro-white p-5 sm:p-7 space-y-5 font-mono overflow-hidden">
-              <div class="flex items-center justify-between border-b border-retro-darkred pb-3">
-                <div class="text-xs text-retro-red font-bold uppercase tracking-wider">// COMPARATIVE SYSTEM ESTIMATE MATRIX</div>
-                <span class="bg-retro-red text-retro-white text-[10px] px-2 py-0.5 font-black uppercase tracking-widest border border-retro-white">VS BENCHMARK</span>
-              </div>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-1">
-                <!-- KOFFEE SPACE ESTIMATE -->
-                <div class="bg-retro-darkgray p-5 border-2 border-retro-red relative space-y-4">
-                  <div class="absolute -top-3 left-4 bg-retro-red text-retro-white text-[9px] px-2.5 py-0.5 font-black uppercase tracking-wider border border-retro-white">
-                    RECOMMENDED CHOICE
-                  </div>
-                  <div class="flex items-center justify-between pt-1">
-                    <span class="text-xs text-retro-red font-extrabold uppercase">KOFFEE SPACE (DIRECT)</span>
-                    <span class="text-[10px] bg-retro-red text-retro-white px-2 py-0.5 font-black">LEAN & EFFICIENT</span>
-                  </div>
-                  
-                  <div class="p-3 bg-retro-black border border-retro-red/60 space-y-1">
-                    <span class="text-[10px] text-gray-400 uppercase tracking-wider block font-bold">1. ESTIMATED DELIVERY TIMELINE</span>
-                    <div class="text-2xl sm:text-3xl font-black text-green-400" id="koffeeTime">5 - 10 DAYS</div>
-                  </div>
-
-                  <div class="p-3 bg-retro-black border border-retro-red/60 space-y-1">
-                    <span class="text-[10px] text-gray-400 uppercase tracking-wider block font-bold">2. ESTIMATED PROJECT INVESTMENT</span>
-                    <div class="text-xl sm:text-2xl font-black text-white" id="koffeeCost">$600 - $1,200</div>
-                  </div>
-
-                  <p class="text-[11px] text-gray-300 leading-normal">Direct hands-on engineering, zero agency middle-management bloat, 100% production code efficiency.</p>
-                </div>
-
-                <!-- BIG AGENCY BENCHMARK -->
-                <div class="bg-retro-darkgray p-5 border border-dashed border-gray-600 relative space-y-4 opacity-90">
-                  <div class="absolute -top-3 left-4 bg-gray-800 text-gray-300 text-[9px] px-2.5 py-0.5 font-bold uppercase tracking-wider border border-gray-600">
-                    AGENCY COMPARISON
-                  </div>
-                  <div class="flex items-center justify-between pt-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase">TRADITIONAL BIG IT FIRM</span>
-                    <span class="text-[10px] bg-gray-800 text-gray-400 px-2 py-0.5 font-bold">HIGH OVERHEAD</span>
-                  </div>
-                  
-                  <div class="p-3 bg-retro-black/60 border border-gray-800 space-y-1">
-                    <span class="text-[10px] text-gray-500 uppercase tracking-wider block font-bold">1. ESTIMATED DELIVERY TIMELINE</span>
-                    <div class="text-2xl sm:text-3xl font-black text-retro-red" id="agencyTime">25 - 45 DAYS</div>
-                  </div>
-
-                  <div class="p-3 bg-retro-black/60 border border-gray-800 space-y-1">
-                    <span class="text-[10px] text-gray-500 uppercase tracking-wider block font-bold">2. ESTIMATED PROJECT INVESTMENT</span>
-                    <div class="text-xl sm:text-2xl font-black text-gray-400" id="agencyCost">$3,000 - $7,000</div>
-                  </div>
-
-                  <p class="text-[11px] text-gray-400 leading-normal">Includes account manager fees, sprint planning overhead, and delayed review cycles for identical code capability.</p>
-                </div>
-              </div>
-
-              <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span class="text-xs text-gray-300">Identical production architecture, 3x faster delivery, zero agency fluff.</span>
-                <a href="#contact" class="btn-brutal bg-retro-red text-retro-white font-bold text-xs px-6 py-3 border border-retro-white uppercase shrink-0">
-                  INITIATE_REQUIREMENTS &rarr;
-                </a>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 04: CONNECT / CONTACT -->
-    <section id="contact" class="p-4 sm:p-8 md:p-12 border-b-4 border-retro-black bg-retro-white min-w-0">
-      <div class="max-w-5xl mx-auto space-y-8 min-w-0">
-        <div class="flex items-center space-x-3 sm:space-x-4">
-          <span class="font-mono font-black text-xl sm:text-2xl text-retro-red whitespace-nowrap shrink-0">/04</span>
-          <h2 class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase break-words leading-tight">INITIATE CONNECTION</h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 min-w-0">
-          <div class="border-heavy bg-retro-paper p-6 space-y-5 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b-2 border-retro-black pb-2">
-                <h3 class="font-display text-xl font-black uppercase">DIRECT ACCESS</h3>
-                <span class="bg-retro-red text-retro-white text-[10px] font-mono font-bold px-2 py-0.5">ZERO SALES REPS</span>
-              </div>
-              
-              <p class="font-mono text-xs text-retro-black font-bold leading-relaxed">
-                Work directly with the core engineer. No project managers, no communication lag, no agency overhead—just rapid execution and production-ready code.
-              </p>
-
-              <div class="space-y-3 font-mono text-xs border border-retro-black p-4 bg-retro-white">
-                <div class="space-y-1">
-                  <span class="text-[10px] text-retro-red font-black uppercase block">// PRIMARY EMAIL CHANNEL</span>
-                  <a href="mailto:hello@koffee.space" class="text-sm font-black text-retro-black hover:text-retro-red underline break-all block">hello@koffee.space</a>
-                </div>
-                <div class="pt-2 border-t border-gray-200 flex justify-between items-center text-[11px] font-bold">
-                  <span class="text-gray-600">RESPONSE SLA:</span>
-                  <span class="text-green-600 font-extrabold">&lt; 12 HOURS</span>
-                </div>
-                <div class="flex justify-between items-center text-[11px] font-bold">
-                  <span class="text-gray-600">AVAILABILITY:</span>
-                  <span class="text-retro-black font-extrabold">GLOBAL / REMOTE-READY</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="border-t-2 border-retro-black pt-4 font-mono text-xs space-y-2">
-              <div class="flex items-center space-x-2 font-bold">
-                <span class="w-2 h-2 rounded-full bg-retro-red"></span>
-                <span>NDA & PRODUCTION SLA COMPLIANT</span>
-              </div>
-              <p class="text-[11px] text-gray-600">Engineering codebases engineered to meet high performance, clean architecture, and tight delivery schedules.</p>
-            </div>
-          </div>
-
-          <form onsubmit="event.preventDefault(); alert('Message dispatched to Koffee Space! We will respond to hello@koffee.space shortly.');" class="border-heavy bg-retro-white p-6 space-y-4 font-mono text-xs font-bold">
-            <div>
-              <label class="block uppercase mb-1">NAME / ORGANIZATION</label>
-              <input type="text" required placeholder="E.g., Acme Corp" class="w-full border border-retro-black p-2 bg-retro-paper focus:outline-none focus:border-retro-red">
-            </div>
-            <div>
-              <label class="block uppercase mb-1">EMAIL ADDRESS</label>
-              <input type="email" required placeholder="name@company.com" class="w-full border border-retro-black p-2 bg-retro-paper focus:outline-none focus:border-retro-red">
-            </div>
-            <div>
-              <label class="block uppercase mb-1">PROJECT SCOPE DETAILS</label>
-              <textarea rows="3" required placeholder="Brief description of requirements..." class="w-full border border-retro-black p-2 bg-retro-paper focus:outline-none focus:border-retro-red"></textarea>
-            </div>
-            <button type="submit" class="btn-brutal w-full bg-retro-black text-retro-white py-3 border border-retro-black uppercase tracking-wider font-extrabold">
-              DISPATCH_REQUIREMENTS &rarr;
-            </button>
-          </form>
+        <div class="flex flex-wrap items-center gap-200 caption-4 font-mono text-secondary">
+          <a href="https://github.com/TheGoodUser" target="_blank" rel="noopener noreferrer" class="hover:text-zari inline-flex items-center gap-50">
+            <i class="ph ph-github-logo text-base" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <button type="button" onclick="openModalKey('privacy')" class="hover:text-zari">Privacy policy</button>
+          <button type="button" onclick="openModalKey('terms')" class="hover:text-zari">Terms</button>
+          <button type="button" onclick="openModalKey('404')" class="hover:text-zari">404 page</button>
+          <a href="#hero" class="bg-elevated border border-theme px-100 py-50 rounded-lg text-zari hover:border-zari inline-flex items-center gap-50">
+            <span>Back to top</span>
+            <i class="ph ph-arrow-up" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="p-6 bg-retro-black text-retro-white font-mono text-xs border-t-4 border-retro-red flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="text-retro-red font-bold">KOFFEE SPACE</span> // ALL SYSTEMS OPERATIONAL © 2026
-      </div>
-      <div class="flex space-x-6 font-bold">
-        <a href="https://github.com/TheGoodUser" target="_blank" class="hover:text-retro-red underline">GITHUB</a>
-        <a href="#hero" class="hover:text-retro-red underline">TOP_COMMAND &uarr;</a>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
+  <!-- HIDDEN BY DEFAULT PROGRESSIVE DISCLOSURE MODAL -->
+  <div id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" class="modal-shell hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md p-200 items-center justify-center">
+    <div class="modal-card bg-surface border border-zari rounded-2xl max-w-lg w-full p-300 space-y-200">
+      <div class="flex items-center justify-between border-b border-theme pb-100">
+        <span id="modalKicker" class="font-mono caption-3 text-zari">SPECIFICATION</span>
+        <button type="button" id="closeModalBtn" aria-label="Close modal" class="w-400 h-400 rounded-lg bg-elevated border border-theme flex items-center justify-center text-primary hover:border-zari">
+          <i class="ph ph-x text-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+      <h3 id="modalTitle" class="heading-5 text-primary">Specification</h3>
+      <div id="modalBody" class="body-5 text-secondary space-y-200"></div>
+      <div class="pt-100 border-t border-theme flex items-center justify-between">
+        <a href="#contact" onclick="closeModal()" class="btn-primary button-sm rounded-lg inline-flex items-center gap-75">
+          <span>Book a 15 min call</span>
+          <i class="ph ph-arrow-right" aria-hidden="true"></i>
+        </a>
+        <button type="button" onclick="closeModal()" class="btn-secondary button-sm rounded-lg">Close</button>
+      </div>
+    </div>
   </div>
 
-  <!-- JAVASCRIPT: LOGIC & SCROLL TRACKING -->
+  <!-- INTERACTIVITY & THEME ENGINE -->
   <script>
-    // Initialize Lucide Icons
-    lucide.createIcons();
+    // 1. Dark / Light / System Theme Switcher (Light Default)
+    const themeBtns = document.querySelectorAll('.theme-btn');
+    const systemMedia = window.matchMedia('(prefers-color-scheme: light)');
+    let currentThemePref = 'light';
 
-    // Currency Rates Configuration
-    const currencyConfig = {
-      USD: { symbol: '$', rate: 1 },
-      INR: { symbol: '₹', rate: 85 },
-      EUR: { symbol: '€', rate: 0.92 },
-      GBP: { symbol: '£', rate: 0.78 },
-      CAD: { symbol: 'C$', rate: 1.38 },
-      AUD: { symbol: 'A$', rate: 1.52 }
-    };
+    function applyTheme(pref) {
+      currentThemePref = pref;
+      const resolved = pref === 'system' ? (systemMedia.matches ? 'light' : 'dark') : pref;
+      document.documentElement.setAttribute('data-theme', resolved);
 
-    let userSelectedCurrency = 'USD';
-
-    // Auto-detect country and currency via free IP API
-    async function detectUserCountryCurrency() {
-      try {
-        const response = await fetch('https://ipapi.co/json/');
-        if (response.ok) {
-          const data = await response.json();
-          const currency = data.currency;
-          const countryName = data.country_name || data.country;
-          
-          if (currency && currencyConfig[currency]) {
-            userSelectedCurrency = currency;
-            document.getElementById('currencySelector').value = currency;
-            document.getElementById('detectedCountry').innerText = `LOC: ${countryName.toUpperCase()} [AUTO CURRENCY: ${currency}]`;
-          } else if (data.country_code === 'IN') {
-            userSelectedCurrency = 'INR';
-            document.getElementById('currencySelector').value = 'INR';
-            document.getElementById('detectedCountry').innerText = `LOC: INDIA [AUTO CURRENCY: INR]`;
-          } else {
-            document.getElementById('detectedCountry').innerText = `LOC: ${countryName.toUpperCase()} [DEFAULT: USD]`;
-          }
-        } else {
-          document.getElementById('detectedCountry').innerText = `LOCATION: GLOBAL [DEFAULT: USD]`;
-        }
-      } catch (err) {
-        document.getElementById('detectedCountry').innerText = `LOCATION: GLOBAL [DEFAULT: USD]`;
-      }
-      calculateScope();
+      themeBtns.forEach(btn => {
+        const isSelected = btn.dataset.themeOpt === pref;
+        btn.classList.toggle('bg-sindoor', isSelected);
+        btn.classList.toggle('text-white', isSelected);
+        btn.classList.toggle('text-secondary', !isSelected);
+      });
     }
 
-    // Calculate Scope Function for Interactive Estimator
-    function calculateScope() {
-      const sysType = document.getElementById('sysType').value;
-      
-      let baseKoffeeDays = 5;
-      let baseKoffeeCost = 500;
-      
-      if (sysType === 'fastapi') {
-        baseKoffeeDays = 4;
-        baseKoffeeCost = 450;
-      } else if (sysType === 'supabase') {
-        baseKoffeeDays = 5;
-        baseKoffeeCost = 600;
-      } else if (sysType === 'aws') {
-        baseKoffeeDays = 2;
-        baseKoffeeCost = 300;
-      } else if (sysType === 'fullstack') {
-        baseKoffeeDays = 10;
-        baseKoffeeCost = 1200;
-      }
-
-      // Addons calculation (lower cost per extra feature)
-      const checkboxes = ['addSsl', 'addPlaystore', 'addCiCd', 'addDocs', 'addRealtime', 'addMl', 'addGeo', 'addPush', 'addAdmin'];
-      let extraDays = 0;
-      let extraCost = 0;
-
-      checkboxes.forEach(id => {
-        const el = document.getElementById(id);
-        if (el && el.checked) {
-          extraDays += 1;
-          extraCost += 100;
-        }
-      });
-
-      const totalKoffeeDaysMin = baseKoffeeDays + extraDays;
-      const totalKoffeeDaysMax = Math.round(totalKoffeeDaysMin * 1.5);
-      const totalKoffeeCostMinUSD = baseKoffeeCost + extraCost;
-      const totalKoffeeCostMaxUSD = Math.round(totalKoffeeCostMinUSD * 1.6);
-
-      // Big agency multiples
-      const agencyDaysMin = Math.round(totalKoffeeDaysMin * 3.2);
-      const agencyDaysMax = Math.round(totalKoffeeDaysMax * 3.5);
-      const agencyCostMinUSD = Math.round(totalKoffeeCostMinUSD * 4.0);
-      const agencyCostMaxUSD = Math.round(totalKoffeeCostMaxUSD * 4.5);
-
-      // Currency conversion logic
-      const activeCurr = currencyConfig[userSelectedCurrency] || currencyConfig['USD'];
-      const symbol = activeCurr.symbol;
-      const rate = activeCurr.rate;
-
-      const koffeeCostMinConverted = Math.round(totalKoffeeCostMinUSD * rate);
-      const koffeeCostMaxConverted = Math.round(totalKoffeeCostMaxUSD * rate);
-      const agencyCostMinConverted = Math.round(agencyCostMinUSD * rate);
-      const agencyCostMaxConverted = Math.round(agencyCostMaxUSD * rate);
-
-      // Format with locale commas
-      const fmt = (num) => num.toLocaleString();
-
-      // Update UI elements
-      document.getElementById('koffeeTime').innerText = `${totalKoffeeDaysMin} - ${totalKoffeeDaysMax} DAYS`;
-      document.getElementById('koffeeCost').innerText = `${symbol}${fmt(koffeeCostMinConverted)} - ${symbol}${fmt(koffeeCostMaxConverted)}`;
-      
-      document.getElementById('agencyTime').innerText = `${agencyDaysMin} - ${agencyDaysMax} DAYS`;
-      document.getElementById('agencyCost').innerText = `${symbol}${fmt(agencyCostMinConverted)} - ${symbol}${fmt(agencyCostMaxConverted)}`;
-    }
-
-    // Dynamic Left Spine Scroll Tracker
-    window.addEventListener('scroll', () => {
-      const sections = ['hero', 'about', 'projects', 'estimator', 'contact'];
-      const spineLabel = document.getElementById('spineSectionName');
-      
-      let currentSection = 'SYS_ORIGIN';
-      sections.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 200 && rect.bottom >= 200) {
-            currentSection = id.toUpperCase();
-          }
-        }
-      });
-      
-      if (spineLabel) {
-        spineLabel.innerText = `SYS_${currentSection}`;
-      }
+    themeBtns.forEach(btn => {
+      btn.addEventListener('click', () => applyTheme(btn.dataset.themeOpt));
     });
 
-    // Run initial calculation and country detection on load
-    window.onload = function() {
-      calculateScope();
-      detectUserCountryCurrency();
+    systemMedia.addEventListener('change', () => {
+      if (currentThemePref === 'system') applyTheme('system');
+    });
+
+    applyTheme('light');
+
+    // 2. Mobile Drawer Toggle (SKILL.md B7)
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const barTop = document.getElementById('barTop');
+    const barMid = document.getElementById('barMid');
+    const barBot = document.getElementById('barBot');
+
+    function setDrawer(open) {
+      mobileDrawer.classList.toggle('is-open', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      if (open) {
+        barTop.classList.remove('-translate-y-1');
+        barTop.classList.add('rotate-45');
+        barMid.classList.add('opacity-0');
+        barBot.classList.remove('translate-y-1');
+        barBot.classList.add('-rotate-45');
+      } else {
+        barTop.classList.add('-translate-y-1');
+        barTop.classList.remove('rotate-45');
+        barMid.classList.remove('opacity-0');
+        barBot.classList.add('translate-y-1');
+        barBot.classList.remove('-rotate-45');
+      }
+    }
+
+    menuToggle.addEventListener('click', () => {
+      setDrawer(!mobileDrawer.classList.contains('is-open'));
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => setDrawer(false));
+    });
+
+    // 3. Interactive Visual Device Stage Switcher (01 Mobile, 02 Engine, 03 Edge)
+    const deviceTabs = document.querySelectorAll('.device-tab');
+    const stages = {
+      mobile: document.getElementById('stage-mobile'),
+      engine: document.getElementById('stage-engine'),
+      edge: document.getElementById('stage-edge')
     };
+
+    deviceTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const key = tab.dataset.device;
+        deviceTabs.forEach(t => {
+          t.classList.remove('bg-sindoor', 'text-white');
+          t.classList.add('text-secondary');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('bg-sindoor', 'text-white');
+        tab.classList.remove('text-secondary');
+        tab.setAttribute('aria-selected', 'true');
+
+        Object.entries(stages).forEach(([k, el]) => {
+          if (k === key) {
+            el.classList.remove('hidden');
+            el.classList.add('is-switching');
+            requestAnimationFrame(() => el.classList.remove('is-switching'));
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // 4. IntersectionObserver Section Reveals (SKILL.md B7)
+    const sectionObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal-section').forEach(sec => sectionObserver.observe(sec));
+
+    // 5. Mandatory Tagline Word-by-Word Scroll Reveal (SKILL.md B11)
+    const taglineEl = document.getElementById('taglineRevealText');
+    const rawWords = taglineEl.textContent.trim().split(/\s+/);
+    taglineEl.innerHTML = rawWords.map(w => `<span class="tagline-word">${w}</span>`).join(' ');
+
+    const wordObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-lit');
+        }
+      });
+    }, { rootMargin: '0px 0px -20% 0px', threshold: 0.5 });
+
+    document.querySelectorAll('.tagline-word').forEach(word => wordObserver.observe(word));
+
+    // 6. Case Study Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('bg-sindoor', 'text-white');
+          b.classList.add('text-secondary');
+        });
+        btn.classList.add('bg-sindoor', 'text-white');
+        btn.classList.remove('text-secondary');
+
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          const cats = card.dataset.category;
+          card.classList.toggle('hidden', !(filter === 'all' || cats.includes(filter)));
+        });
+      });
+    });
+
+    // 7. Interactive Scope Estimator
+    const rates = {
+      USD: { symbol: '$', mult: 1 },
+      INR: { symbol: '₹', mult: 84.5 },
+      EUR: { symbol: '€', mult: 0.92 },
+      GBP: { symbol: '£', mult: 0.79 }
+    };
+    let activeCurrency = 'USD';
+
+    function updateEstimate() {
+      const arch = document.getElementById('archSelect').value;
+      const baseMap = {
+        flutter: { days: 5, usd: 520 },
+        fastapi: { days: 4, usd: 460 },
+        supabase: { days: 5, usd: 580 },
+        aws: { days: 2, usd: 320 },
+        fullstack: { days: 9, usd: 1150 }
+      };
+
+      let checkedCount = 0;
+      document.querySelectorAll('.mod-check').forEach(cb => {
+        if (cb.checked) checkedCount++;
+      });
+
+      const base = baseMap[arch];
+      const minDays = base.days + checkedCount;
+      const maxDays = Math.round(minDays * 1.45);
+      const minUsd = base.usd + checkedCount * 95;
+      const maxUsd = Math.round(minUsd * 1.55);
+
+      const agMinDays = Math.round(minDays * 3.1);
+      const agMaxDays = Math.round(maxDays * 3.4);
+      const agMinUsd = Math.round(minUsd * 3.8);
+      const agMaxUsd = Math.round(maxUsd * 4.3);
+
+      const c = rates[activeCurrency] || rates.USD;
+      const fmt = n => Math.round(n * c.mult).toLocaleString();
+
+      document.getElementById('studioDays').textContent = `${minDays} to ${maxDays} days`;
+      document.getElementById('studioCost').textContent = `${c.symbol}${fmt(minUsd)} to ${c.symbol}${fmt(maxUsd)}`;
+      document.getElementById('agencyDays').textContent = `${agMinDays} to ${agMaxDays} days`;
+      document.getElementById('agencyCost').textContent = `${c.symbol}${fmt(agMinUsd)} to ${c.symbol}${fmt(agMaxUsd)}`;
+      document.getElementById('geoStatus').textContent = `Currency: ${activeCurrency} (${c.symbol})`;
+    }
+
+    // 8. Accordion FAQ
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const panel = trigger.nextElementSibling;
+        const icon = trigger.querySelector('i');
+        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+        panel.classList.toggle('hidden', isOpen);
+        icon.classList.toggle('rotate-180', !isOpen);
+      });
+    });
+
+    // 9. Modal System (Hidden by Default)
+    const modal = document.getElementById('detailModal');
+    const modalKicker = document.getElementById('modalKicker');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+
+    const modalLibrary = {
+      mvp: {
+        kicker: 'TRACK 01 · FULL STACK MVP',
+        title: '0 to 1 MVP Build',
+        html: '<p>End to end Flutter mobile or Next.js web application paired with FastAPI or Supabase backend, authentication, payments, and cloud deployment.</p>'
+      },
+      debug: {
+        kicker: 'TRACK 02 · CODEBASE RESCUE',
+        title: 'Debugging & Performance Refactor',
+        html: '<p>48 hour diagnostic audit followed by clean pull requests fixing Riverpod/Provider leaks, SQL query latency, and payment webhooks.</p>'
+      },
+      cloud: {
+        kicker: 'TRACK 03 · EDGE INFRASTRUCTURE',
+        title: 'Cloud & Edge Hardening',
+        html: '<p>AWS CloudFront CDN, S3 buckets, Docker containers, Nginx reverse proxies, and PostgreSQL row-level security provisioned on your accounts.</p>'
+      },
+      advisory: {
+        kicker: 'TRACK 04 · TECHNICAL ADVISORY',
+        title: '1 on 1 Architecture Audit',
+        html: '<p>60 minute live engineering session with a written architecture decision record covering schema design, vendor quotes, and CI/CD.</p>'
+      },
+      news: {
+        kicker: 'CASE · 10,400+ MAU',
+        title: 'Multi-Modal News Engine',
+        html: '<p>Unified Flutter Android and Next.js publishing platform backed by Supabase PostgreSQL, lifting average session length by 25.4%.</p>'
+      },
+      social: {
+        kicker: 'CASE · PLAY STORE BETA',
+        title: 'Social Discovery Platform',
+        html: '<p>Production Flutter app featuring Google ML Kit verification, GoRouter deep links, and server-verified Razorpay payment hooks.</p>'
+      },
+      cms: {
+        kicker: 'CASE · 24,800+ ARTICLES',
+        title: 'Offline-First Editorial CMS',
+        html: '<p>Encrypted Hive box local cache paired with incremental Supabase sync and rich-text Quill previews for zero-signal reading.</p>'
+      },
+      hrms: {
+        kicker: 'CASE · 210+ SEATS',
+        title: 'Geo-Fenced Workforce HRMS',
+        html: '<p>Automated selfie and GPS attendance check-ins with manager approval flows, reducing weekly HR admin time by 31%.</p>'
+      },
+      privacy: {
+        kicker: 'LEGAL · PRIVACY',
+        title: 'Privacy Policy',
+        html: '<p>Contact details submitted via koffee.space are used solely to respond to your project inquiry and are never sold or shared.</p>'
+      },
+      terms: {
+        kicker: 'LEGAL · TERMS',
+        title: 'Terms of Service',
+        html: '<p>All engagements are governed by a written statement of work with milestone checkpoints and full IP transfer upon payment.</p>'
+      },
+      '404': {
+        kicker: 'ERROR 404',
+        title: 'Page off the press',
+        html: '<p>The requested route does not exist in this edition of koffee.space. Return to the main architecture index below.</p>'
+      }
+    };
+
+    function openModalKey(key) {
+      const item = modalLibrary[key];
+      if (!item) return;
+      modalKicker.textContent = item.kicker;
+      modalTitle.textContent = item.title;
+      modalBody.innerHTML = item.html;
+      modal.classList.remove('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      requestAnimationFrame(() => modal.classList.add('is-active'));
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      setTimeout(() => {
+        if (!modal.classList.contains('is-active')) modal.classList.add('hidden');
+      }, 300);
+    }
+
+    document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('is-active')) closeModal(); });
+
+    // 10. Form Validation (SKILL.md B8 & B9)
+    const consultForm = document.getElementById('consultForm');
+    if (consultForm) {
+      consultForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = document.getElementById('clientName').value.trim();
+        const email = document.getElementById('clientEmail').value.trim();
+        const brief = document.getElementById('projectBrief').value.trim();
+        const feedback = document.getElementById('formFeedback');
+
+        const nameOk = name.length >= 2;
+        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        const briefOk = brief.length >= 15;
+
+        document.getElementById('nameError').classList.toggle('hidden', nameOk);
+        document.getElementById('emailError').classList.toggle('hidden', emailOk);
+        document.getElementById('briefError').classList.toggle('hidden', briefOk);
+
+        if (!nameOk || !emailOk || !briefOk) {
+          feedback.classList.remove('hidden');
+          feedback.classList.add('border-sindoor');
+          feedback.textContent = 'Dispatch paused. Please check the highlighted fields.';
+          return;
+        }
+
+        feedback.classList.remove('hidden', 'border-sindoor');
+        feedback.classList.add('border-zari');
+        feedback.textContent = `Brief logged for ${name}. Siddharth will reply to ${email} within 12 hours.`;
+        e.target.reset();
+      });
+    }
+
+    updateEstimate();
   </script>
 </body>
 </html>
